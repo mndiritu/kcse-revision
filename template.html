@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Topic Revision</title>
+    <title>Topic Revision Template</title>
+    <!-- Link to the main stylesheet -->
     <link rel="stylesheet" href="../style.css">
+    <!-- MathJax for formulas -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
@@ -12,32 +14,70 @@
     <header>
         <div class="container">
             <a href="../index.html">&larr; Back to Dashboard</a>
+            <!-- TOPIC TITLE GOES HERE -->
             <h1 id="topic-title">Topic Name Here</h1>
         </div>
     </header>
+
     <div class="container">
+        <!-- Navigation Tabs -->
         <div class="tabs">
-            <button class="tab-btn active" data-target="notes-view">📖 Revision Notes</button>
+            <button class="tab-btn active" data-target="writing-notes">📝 Notes for Writing</button>
+            <button class="tab-btn" data-target="quick-revision">⚡ Quick Revision</button>
             <button class="tab-btn" data-target="quiz-view">✍️ Interactive Quiz</button>
         </div>
-        <div id="notes-view" class="content-section active notes-content">
-            <p>Notes content will go here...</p>
+
+        <!-- TAB 1: NOTES FOR WRITING (Comprehensive) -->
+        <div id="writing-notes" class="content-section active">
+            <h2>Detailed Topic Notes</h2>
+            <p>Paste the comprehensive, teacher-approved notes here. Use &lt;h3&gt; for main headings and &lt;ul&gt; for lists.</p>
+            
+            <h3>1. Subtopic Title</h3>
+            <p>Content goes here...</p>
         </div>
+
+        <!-- TAB 2: QUICK REVISION (Summarized) -->
+        <div id="quick-revision" class="content-section">
+            <h2>Quick Revision Sheet</h2>
+            
+            <div class="concept-box" style="border-left-color: #f59e0b;">
+                <h3>EXAM QUICK-FIRE (MEMORISE)</h3>
+                <ul>
+                    <li><strong>Key Point 1:</strong> Definition or Date</li>
+                    <li><strong>Key Point 2:</strong> Formula or Fact</li>
+                </ul>
+            </div>
+
+            <h3>Key Summaries</h3>
+            <p>Short, bulleted summaries go here for last-minute reading.</p>
+        </div>
+
+        <!-- TAB 3: QUIZ -->
         <div id="quiz-view" class="content-section">
             <div id="quiz-container"></div>
-            <button onclick="location.reload()" style="margin-top:20px; padding:10px;">Reset Quiz</button>
+            <button onclick="location.reload()" style="margin-top:20px; padding:10px; cursor:pointer;">Reset Quiz</button>
         </div>
     </div>
+
+    <!-- QUIZ DATA CONFIGURATION -->
     <script>
         const quizData = [
             {
-                question: "Sample Question?",
+                question: "Sample Question 1?",
                 options: ["Option A", "Option B", "Option C", "Option D"],
-                correct: 0,
-                explanation: "Explanation goes here."
+                correct: 0, // Index 0 is Option A
+                explanation: "Explanation for why A is correct."
+            },
+            {
+                question: "Sample Question 2?",
+                options: ["Option A", "Option B", "Option C", "Option D"],
+                correct: 1, // Index 1 is Option B
+                explanation: "Explanation for why B is correct."
             }
         ];
     </script>
+    
+    <!-- Load the Engine -->
     <script src="../main.js"></script>
 </body>
 </html>
