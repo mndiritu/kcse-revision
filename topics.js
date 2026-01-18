@@ -7,10 +7,11 @@ window.KCSE_TOPICS = {
   "mathematics": [],
   "history": [
     {
-      "title": "Cooperation In Africa",
+      "title": "Co-operation in Africa",
       "path": "history/cooperation-in-africa.html",
       "tags": [
-        "Form 4"
+        "Form 4",
+        "History"
       ]
     }
   ],
