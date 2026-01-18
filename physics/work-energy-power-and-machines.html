@@ -4,18 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Work, Energy, Power and Machines (Form 4)</title>
-  <meta name="tags" content="Form 4, KCSE, Physics, Work, Energy, Power, Machines, Efficiency, MA, VR" />
+  <meta name="tags" content="Form 4, KCSE, Physics, Work, Energy, Power, Machines" />
   <link rel="stylesheet" href="../style.css" />
-  <!-- MathJax for formulas -->
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
   <header>
     <div class="container">
       <a href="../index.html">&larr; Back to Dashboard</a>
-      <h1 id="topic-title">Work, Energy, Power and Machines</h1>
+      <h1 id="topic-title">Work, Energy, Power and Machines (Form 4)</h1>
     </div>
   </header>
 
@@ -29,287 +26,873 @@
       <button class="tab-btn" data-target="quiz-view">✍️ MCQ Quiz</button>
     </div>
 
-    <!-- TOOLS (Quick Jump) -->
+    <!-- TOOLS (Quick Jump + Expand/Collapse) -->
     <div class="concept-box" style="margin-top: 14px;">
       <h3 style="margin-top:0;">Topic Tools</h3>
       <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
         <label style="font-weight:800; color:#334155;">
           Quick Jump:
-          <select id="quick-jump" onchange="document.getElementById(this.value).scrollIntoView({behavior: 'smooth'})" style="margin-left:6px; padding:8px 10px; border-radius:8px; border:1px solid #e2e8f0;">
+          <select id="quick-jump" style="margin-left:6px; padding:8px 10px; border-radius:8px; border:1px solid #e2e8f0;">
             <option value="">Select a section…</option>
-            <option value="sec-work">1. Work</option>
-            <option value="sec-energy">2. Energy (PE & KE)</option>
-            <option value="sec-power">3. Power</option>
-            <option value="sec-machines">4. Machines (MA, VR, Efficiency)</option>
-            <option value="sec-specific-machines">5. Specific Machines</option>
           </select>
         </label>
+        <button id="jump-btn" class="reveal-btn" type="button">Go</button>
+        <button id="expand-all" class="reveal-btn" type="button">Expand all</button>
+        <button id="collapse-all" class="reveal-btn" type="button">Collapse all</button>
       </div>
       <p style="margin:10px 0 0 0; color:#64748b; font-weight:700;">
-        Tip: This is a long topic. Focus on mastering the <strong>VR formulas</strong> for each machine type.
+        Tip: For “memory muscle”, master the <strong>bold lines + formulas</strong> first. Then do <strong>one worked example</strong>. KCSE loves repetition, not suffering.
       </p>
     </div>
 
     <!-- TAB 1: NOTES FOR WRITING -->
     <div id="writing-notes" class="content-section active">
-      <h2>WORK, ENERGY, POWER & MACHINES — WRITING NOTES</h2>
+      <h2>WORK, ENERGY, POWER & MACHINES — WRITING NOTES (KCSE)</h2>
 
       <details class="note-section" open>
-        <summary id="sec-work">1) Work</summary>
-        <p><strong>Definition:</strong> Work is the product of force and distance moved in the direction of the force.</p>
-        <div class="concept-box">
-          <p><strong>Formula:</strong> \( W = F \times d \)</p>
-          <p><strong>SI Unit:</strong> Joule (J). \( 1 \text{ J} = 1 \text{ Nm} \).</p>
-          <p><em>Note: No work is done if there is no movement or if movement is perpendicular to the force (e.g., carrying a bag while walking horizontally).</em></p>
-        </div>
-        
-        <h4>Worked Example (Stone Mason)</h4>
-        <p>A stone mason lifts a stone of mass 15 kg through a height of 2.0 m.</p>
+        <summary id="overview">1) Big picture: what you must be able to do</summary>
+        <p>
+          This topic is basically “how energy moves around” and “how machines make work easier”.
+          You must be able to:
+        </p>
         <ul>
-          <li>Force = Weight = \( mg = 15 \times 10 = 150 \text{ N} \)</li>
-          <li>Distance = \( 2.0 \text{ m} \)</li>
-          <li>Work = \( 150 \times 2 = \mathbf{300 \text{ J}} \)</li>
+          <li><strong>Define work, energy and power</strong> + give SI units.</li>
+          <li>Use key formulas: <strong>W = Fd</strong>, <strong>P = W/t</strong>, <strong>P.E = mgh</strong>, <strong>K.E = ½mv²</strong>, <strong>EPE = ½ke²</strong>.</li>
+          <li>Use the <strong>Law of Conservation of Energy</strong> and describe energy transformations.</li>
+          <li>For machines: use <strong>M.A</strong>, <strong>V.R</strong>, <strong>efficiency</strong>, and explain why efficiency is always <strong>&lt; 100%</strong>.</li>
         </ul>
+        <div class="concept-box">
+          <h4>Quick exam language (use these exact phrases)</h4>
+          <ul>
+            <li><strong>Work is done</strong> when a force causes movement <strong>in the direction of the force</strong>.</li>
+            <li><strong>Power</strong> is the <strong>rate of doing work</strong> (or rate of energy conversion).</li>
+            <li><strong>Efficiency</strong> is <strong>useful output</strong> divided by <strong>input</strong>, as a percentage.</li>
+          </ul>
+        </div>
       </details>
 
       <details class="note-section" open>
-        <summary id="sec-energy">2) Energy</summary>
-        <p><strong>Definition:</strong> Energy is the ability or capacity to do work. It exists in renewable (solar, wind, water) and non-renewable (fossils, nuclear) forms.</p>
-        <p><strong>Law of Conservation of Energy:</strong> Energy can neither be created nor destroyed but can only be transformed from one form to another.</p>
-
-        <h4>(a) Gravitational Potential Energy (P.E)</h4>
-        <p>Energy possessed by a body due to its position (height).</p>
-        <div class="concept-box">
-          <p>\( P.E. = mgh \)</p>
-        </div>
-
-        <h4>(b) Elastic Potential Energy</h4>
-        <p>Energy stored in a stretched or compressed spring.</p>
-        <div class="concept-box">
-          <p>\( \text{Work done} = \text{Average Force} \times \text{Extension} \)</p>
-          <p>\( P.E. = \frac{1}{2}Fe \)</p>
-          <p>Since \( F = ke \) (Hooke's Law), \( P.E. = \frac{1}{2}ke^2 \)</p>
-        </div>
-
-        <h4>(c) Kinetic Energy (K.E)</h4>
-        <p>Energy possessed by a body due to its motion.</p>
-        <div class="concept-box">
-          <p>\( K.E. = \frac{1}{2}mv^2 \)</p>
-        </div>
-        <p><strong>Work-Energy Theorem:</strong> Work done in stopping a moving body = Kinetic Energy lost.</p>
-        <p><strong>Example:</strong> A car of mass 1250 kg at 20 m/s is brought to rest.</p>
+        <summary id="sources-energy">2) Sources of Energy (renewable vs non-renewable)</summary>
+        <p><strong>Energy sources</strong> are classified into:</p>
         <ul>
-           <li>Work done = \( \frac{1}{2}mv^2 = \frac{1}{2} \times 1250 \times 20^2 = \mathbf{250,000 \text{ J}} \)</li>
+          <li><strong>Renewable:</strong> supply can be renewed again and again (e.g. <strong>water, solar, wind, geothermal</strong>).</li>
+          <li><strong>Non-renewable:</strong> supply cannot be renewed again and again (e.g. <strong>fossils, firewood, nuclear</strong>).</li>
         </ul>
-      </details>
 
-      <details class="note-section" open>
-        <summary id="sec-power">3) Power</summary>
-        <p><strong>Definition:</strong> The rate of doing work (or rate of energy conversion).</p>
         <div class="concept-box">
-          <p>\( \text{Power} = \frac{\text{Work done}}{\text{Time taken}} \)</p>
-          <p>Also: \( P = \text{Force} \times \text{Velocity} \) (since \( \frac{d}{t} = v \))</p>
-          <p><strong>SI Unit:</strong> Watt (W). \( 1 \text{ W} = 1 \text{ J/s} \).</p>
+          <h4>Low-resource classroom examples</h4>
+          <ul>
+            <li>Solar: phone solar charger / solar lamp.</li>
+            <li>Wind: windmill video / paper pinwheel demo.</li>
+            <li>Biogas / firewood: common household comparison (energy + environmental impact).</li>
+          </ul>
         </div>
       </details>
 
       <details class="note-section" open>
-        <summary id="sec-machines">4) Machines: Terms & Definitions</summary>
-        <p>A machine is a device that enables work to be done more easily or conveniently.</p>
-        
+        <summary id="forms-energy">3) Forms of Energy</summary>
+        <p>The common forms include:</p>
+        <ul>
+          <li><strong>Mechanical</strong> (Potential + Kinetic)</li>
+          <li><strong>Chemical</strong> (stored in batteries and food)</li>
+          <li><strong>Electrical</strong></li>
+          <li><strong>Light</strong></li>
+          <li><strong>Nuclear</strong></li>
+          <li><strong>Wave</strong></li>
+        </ul>
+
         <div class="concept-box">
+          <p style="margin:0;">
+            <strong>Note:</strong> Potential energy is energy due to <strong>position or state</strong>, while kinetic energy is energy due to <strong>motion</strong>.
+          </p>
+        </div>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="conservation">4) Law of Conservation of Energy + Energy Transformations</summary>
+        <p>
+          <strong>Law of Conservation of Energy:</strong>
+          <em>Energy can neither be created nor destroyed but can only be transformed from one form to another.</em>
+        </p>
+
+        <div class="concept-box">
+          <h4>Energy transformation and transducers</h4>
+          <p>
+            A device that helps transform energy from one form to another is called a <strong>transducer</strong>.
+          </p>
+          <ul>
+            <li>Solar → Heat: <strong>solar panel</strong></li>
+            <li>Electrical → Kinetic: <strong>motor</strong></li>
+            <li>Kinetic → Electrical: <strong>dynamo</strong></li>
+            <li>Solar → Electrical: <strong>solar cell</strong></li>
+            <li>Heat → Electrical: <strong>thermocouple</strong></li>
+            <li>Electrical → Sound: <strong>loudspeaker</strong></li>
+            <li>Chemical → Electrical: <strong>battery</strong></li>
+          </ul>
+        </div>
+
+        <div class="concept-box">
+          <h4>KCSE-style transformation statement (example)</h4>
+          <p style="margin:0;">
+            If a hammer hits lead and its temperature rises: <strong>kinetic energy → heat energy</strong>.
+          </p>
+        </div>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="work">5) Work (W)</summary>
+        <p>
+          <strong>Definition:</strong> Work is the product of force and distance moved <strong>in the direction of the force</strong>.
+        </p>
+        <div class="concept-box">
+          <p style="margin:0;">
+            <strong>Formula:</strong> <span style="font-weight:900;">W = F × d</span><br/>
+            <strong>SI unit:</strong> joule (J)<br/>
+            <strong>1 J = 1 N m</strong>
+          </p>
+        </div>
+
+        <p>
+          <strong>Important KCSE point:</strong> No work is done if there is no movement in the direction of the force
+          (e.g. pushing a wall; carrying a load on the head while standing still).
+        </p>
+
+        <details class="note-section">
+          <summary id="work-examples">Worked examples (copy this structure)</summary>
+
+          <div class="concept-box">
+            <h4>Example A: lifting a stone</h4>
+            <p>
+              Mass = 15 kg, height = 2.0 m, take g = 10 N kg<sup>−1</sup>.
+            </p>
             <ul>
-                <li><strong>Mechanical Advantage (M.A):</strong> Ratio of Load to Effort. \( M.A = \frac{L}{E} \)</li>
-                <li><strong>Velocity Ratio (V.R):</strong> Ratio of distance moved by Effort (\( d_E \)) to distance moved by Load (\( d_L \)). \( V.R = \frac{d_E}{d_L} \)</li>
-                <li><strong>Efficiency (\( \eta \)):</strong> Ratio of Work Output to Work Input expressed as a percentage.</li>
+              <li>Force = weight = mg = 15 × 10 = <strong>150 N</strong></li>
+              <li>Work done = Fd = 150 × 2 = <strong>300 J</strong></li>
             </ul>
-            <p><strong>Formula linking terms:</strong> \( \text{Efficiency} = \frac{M.A}{V.R} \times 100\% \)</p>
-        </div>
-        
-        <h4>Why is efficiency always less than 100%?</h4>
-        <ol>
-            <li>Work is done against <strong>friction</strong> in moving parts.</li>
-            <li>Work is done to lift <strong>heavy parts</strong> of the machine itself (e.g. the lower pulley block).</li>
-        </ol>
+          </div>
+
+          <div class="concept-box">
+            <h4>Example B: climbing stairs</h4>
+            <p>
+              Mass = 40 kg, 12 steps, each 20 cm high.
+            </p>
+            <ul>
+              <li>Total height = 12 × 20/100 = <strong>2.4 m</strong></li>
+              <li>Work done = mgh = 40 × 10 × 2.4 = <strong>960 J</strong></li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="note-section">
+          <summary id="force-distance">Work from a force–distance graph (area under the graph)</summary>
+          <p>
+            <strong>Key rule:</strong> The <strong>area under a force–distance graph</strong> represents <strong>work done</strong> (energy spent).
+          </p>
+
+          <div class="concept-box">
+            <h4>Simple sketch (not to scale)</h4>
+            <svg viewBox="0 0 520 240" width="100%" height="240" role="img" aria-label="Force-distance graph: work is area under curve"
+              style="border:1px solid #e2e8f0; border-radius:12px; background:#fff;">
+              <!-- Axes -->
+              <line x1="60" y1="200" x2="500" y2="200" stroke="#0f172a" stroke-width="2"/>
+              <line x1="60" y1="200" x2="60" y2="20" stroke="#0f172a" stroke-width="2"/>
+              <text x="505" y="206" font-size="12" fill="#0f172a">Distance (m)</text>
+              <text x="10" y="30" font-size="12" fill="#0f172a">Force (N)</text>
+
+              <!-- Step-like curve -->
+              <polyline points="60,140 140,140 140,110 240,110 240,110 320,110 360,200 460,200"
+                        fill="none" stroke="#ef4444" stroke-width="3"/>
+
+              <!-- Shaded area (work) -->
+              <polygon points="60,200 60,140 140,140 140,110 320,110 360,200 460,200 60,200"
+                       fill="rgba(59,130,246,0.18)" stroke="none"/>
+
+              <text x="220" y="95" font-size="13" fill="#0f172a" font-weight="700">Area under graph = Work</text>
+
+              <!-- Ticks -->
+              <g fill="#0f172a" font-size="11">
+                <text x="55" y="215">0</text>
+                <text x="135" y="215">10</text>
+                <text x="235" y="215">20</text>
+                <text x="335" y="215">30</text>
+                <text x="435" y="215">40</text>
+              </g>
+            </svg>
+          </div>
+        </details>
       </details>
 
       <details class="note-section" open>
-        <summary id="sec-specific-machines">5) Specific Machines (VR Formulas)</summary>
-        
-        <p>You must memorize the V.R formula for each machine type.</p>
+        <summary id="gpe">6) Gravitational Potential Energy (P.E)</summary>
+        <p>
+          <strong>Definition:</strong> Energy possessed due to height above a surface.
+          The P.E gained equals the work done in raising the body.
+        </p>
+        <div class="concept-box">
+          <p style="margin:0;">
+            <strong>Formula:</strong> <span style="font-weight:900;">P.E = mgh</span>
+          </p>
+        </div>
 
-        <h4>A. Levers</h4>
-        <p>\( V.R = \frac{\text{Effort Arm}}{\text{Load Arm}} \)</p>
+        <div class="concept-box">
+          <h4>Quick diagram</h4>
+          <svg viewBox="0 0 520 210" width="100%" height="210" role="img" aria-label="Block raised through height h"
+               style="border:1px solid #e2e8f0; border-radius:12px; background:#fff;">
+            <rect x="220" y="40" width="80" height="60" rx="8" fill="rgba(99,102,241,0.18)" stroke="#0f172a"/>
+            <text x="238" y="75" font-size="14" fill="#0f172a" font-weight="800">mass m</text>
 
-        <h4>B. Wheel and Axle</h4>
-        <p>\( V.R = \frac{\text{Radius of Wheel (R)}}{\text{Radius of Axle (r)}} \)</p>
+            <line x1="260" y1="100" x2="260" y2="170" stroke="#0f172a" stroke-width="2" stroke-dasharray="4,4"/>
+            <polygon points="255,112 265,112 260,102" fill="#0f172a"/>
+            <polygon points="255,158 265,158 260,168" fill="#0f172a"/>
+            <text x="270" y="140" font-size="14" fill="#0f172a" font-weight="800">h</text>
 
-        <h4>C. Inclined Plane</h4>
-        <p>\( V.R = \frac{\text{Length of plane (L)}}{\text{Vertical height (h)}} = \frac{1}{\sin \theta} \)</p>
-        
-        <h4>D. Screw / Screw Jack</h4>
-        <p>\( V.R = \frac{\text{Circumference of handle}}{\text{Pitch}} = \frac{2\pi R}{\text{pitch}} \)</p>
-        
-        <h4>E. Gears</h4>
-        <p>\( V.R = \frac{\text{No. of teeth in Driven wheel}}{\text{No. of teeth in Driver wheel}} \)</p>
+            <rect x="120" y="170" width="280" height="18" fill="#94a3b8"/>
+            <text x="150" y="205" font-size="12" fill="#334155">Ground / reference level</text>
+          </svg>
+        </div>
+      </details>
 
-        <h4>F. Pulleys</h4>
+      <details class="note-section" open>
+        <summary id="elastic-pe">7) Elastic Potential Energy (spring energy)</summary>
+        <p>
+          This is energy stored in a stretched or compressed spring. It equals the work done in stretching/compressing.
+        </p>
+
+        <div class="concept-box">
+          <h4>Key ideas and derivation (KCSE-short)</h4>
+          <ul>
+            <li>Work done = <strong>average force × extension</strong></li>
+            <li>Average force = (0 + F)/2 = <strong>F/2</strong></li>
+            <li>So work done = (F/2) × e</li>
+            <li>But Hooke’s law: <strong>F = ke</strong></li>
+            <li>Therefore: <strong>Elastic P.E = ½ke²</strong></li>
+          </ul>
+        </div>
+
+        <details class="note-section">
+          <summary id="elastic-example">Worked example: spring extension</summary>
+          <p>Force 7.5 N stretches a spring by 5 cm. Find work done in stretching by 8 cm.</p>
+          <ul>
+            <li>Force for 8 cm: 7.5 × 8/5 = <strong>12.0 N</strong></li>
+            <li>Work done = ½ F e = ½ × 12.0 × 8/100 = <strong>0.48 J</strong></li>
+          </ul>
+        </details>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="kinetic-energy">8) Kinetic Energy (K.E)</summary>
+        <p><strong>Definition:</strong> Energy possessed due to motion.</p>
+        <div class="concept-box">
+          <p style="margin:0;">
+            <strong>Formula:</strong> <span style="font-weight:900;">K.E = ½mv²</span>
+          </p>
+          <p style="margin:8px 0 0 0; color:#64748b; font-weight:700;">
+            KCSE meaning: work done to accelerate a body = kinetic energy gained.
+          </p>
+        </div>
+
+        <details class="note-section">
+          <summary id="ke-example-trolley">Worked example: trolley pulled by a force</summary>
+          <p>
+            Mass 2.0 kg, pulled from rest by force 5.0 N for 1.2 s, no friction.
+          </p>
+          <ul>
+            <li>Acceleration: a = F/m = 5/2 = <strong>2.5 m s<sup>−2</sup></strong></li>
+            <li>Distance: s = ½at² = ½ × 2.5 × (1.2)² = <strong>1.8 m</strong></li>
+            <li>K.E gained = work done = Fs = 5 × 1.8 = <strong>9.0 J</strong></li>
+          </ul>
+        </details>
+
+        <details class="note-section">
+          <summary id="ke-brakes">Worked example: braking force and work</summary>
+          <p>
+            Speed 72 km h<sup>−1</sup> (= 20 m s<sup>−1</sup>), stops in 8 s, mass 1250 kg.
+          </p>
+          <ul>
+            <li>a = (0 − 20)/8 = <strong>−2.5 m s<sup>−2</sup></strong></li>
+            <li>Braking force magnitude: F = ma = 1250 × 2.5 = <strong>3125 N</strong></li>
+            <li>Work done to stop = kinetic energy lost = ½mu²</li>
+          </ul>
+        </details>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="pe-ke-interchange">9) Interchange of P.E and K.E (projected body / falling body)</summary>
+        <p>
+          For a body projected vertically upwards (air resistance negligible):
+        </p>
         <ul>
-            <li><strong>Single Fixed Pulley:</strong> V.R = 1</li>
-            <li><strong>Single Movable Pulley:</strong> V.R = 2</li>
-            <li><strong>Block and Tackle:</strong> V.R = Number of ropes supporting the load.</li>
+          <li>As it rises: <strong>K.E decreases</strong>, <strong>P.E increases</strong>.</li>
+          <li>At the top: <strong>K.E = 0</strong>, <strong>P.E is maximum</strong>.</li>
+          <li>As it falls: <strong>P.E decreases</strong>, <strong>K.E increases</strong>.</li>
         </ul>
-        
-        <h4>G. Hydraulic Press</h4>
-        <p>\( V.R = \frac{\text{Area of Load Piston}}{\text{Area of Effort Piston}} = \frac{R^2}{r^2} \)</p>
+
+        <div class="concept-box">
+          <p style="margin:0;">
+            <strong>Total mechanical energy:</strong> <span style="font-weight:900;">E = P.E + K.E = constant</span> (if no energy losses).
+          </p>
+        </div>
+
+        <div class="concept-box">
+          <h4>Simple “energy swap” sketch</h4>
+          <svg viewBox="0 0 520 220" width="100%" height="220" role="img" aria-label="PE increases while KE decreases; total energy constant"
+               style="border:1px solid #e2e8f0; border-radius:12px; background:#fff;">
+            <!-- axes -->
+            <line x1="60" y1="190" x2="500" y2="190" stroke="#0f172a" stroke-width="2"/>
+            <line x1="60" y1="190" x2="60" y2="20" stroke="#0f172a" stroke-width="2"/>
+            <text x="505" y="195" font-size="12" fill="#0f172a">Time</text>
+            <text x="18" y="30" font-size="12" fill="#0f172a">Energy</text>
+
+            <!-- KE curve (down) -->
+            <path d="M60,60 C200,70 310,120 500,175" fill="none" stroke="#ef4444" stroke-width="3"/>
+            <text x="445" y="175" font-size="13" fill="#ef4444" font-weight="800">K.E</text>
+
+            <!-- PE curve (up) -->
+            <path d="M60,175 C220,150 330,90 500,45" fill="none" stroke="#22c55e" stroke-width="3"/>
+            <text x="445" y="55" font-size="13" fill="#22c55e" font-weight="800">P.E</text>
+
+            <!-- total energy line -->
+            <line x1="60" y1="40" x2="500" y2="40" stroke="#0f172a" stroke-width="2" stroke-dasharray="4,4"/>
+            <text x="250" y="34" font-size="12" fill="#0f172a" font-weight="800">Total E constant</text>
+          </svg>
+        </div>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="power">10) Power</summary>
+        <p>
+          <strong>Definition:</strong> Power is the <strong>rate of doing work</strong> (work done per unit time).
+          Since work done equals energy converted, power is also the rate of energy conversion.
+        </p>
+        <div class="concept-box">
+          <p style="margin:0;">
+            <strong>Formula:</strong> <span style="font-weight:900;">P = W / t</span>  or  <span style="font-weight:900;">P = Energy converted / time</span><br/>
+            <strong>SI unit:</strong> watt (W) where <strong>1 W = 1 J s<sup>−1</sup></strong>
+          </p>
+        </div>
+
+        <details class="note-section">
+          <summary id="power-examples">Worked examples (typical KCSE)</summary>
+
+          <div class="concept-box">
+            <h4>Example: climbing stairs</h4>
+            <p>Weight 500 N, height 3.0 m, time 4 s</p>
+            <ul>
+              <li>Work done = Fd = 500 × 3 = 1500 J</li>
+              <li>Power = W/t = 1500/4 = <strong>375 W</strong></li>
+            </ul>
+          </div>
+
+          <div class="concept-box">
+            <h4>Example: motor lifting a load</h4>
+            <p>Mass 50 kg, height 24 m, time 40 s, g = 10 N kg<sup>−1</sup></p>
+            <ul>
+              <li>Work = mgh = 50 × 10 × 24 = 12000 J</li>
+              <li>Power = 12000/40 = <strong>300 W</strong></li>
+            </ul>
+          </div>
+
+          <div class="concept-box">
+            <h4>Shortcut you can mention (constant speed)</h4>
+            <p style="margin:0;">
+              Since <strong>v = d/t</strong>, then <strong>P = (F×d)/t = Fv</strong> (for uniform velocity).
+            </p>
+          </div>
+        </details>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="machines">11) Machines: Effort, Load, M.A, V.R, Efficiency</summary>
+        <p>
+          A <strong>machine</strong> is a device that enables work to be done more easily or conveniently.
+          A force applied at one point (effort) is used to overcome a load at another point.
+        </p>
+
+        <div class="concept-box">
+          <h4>Core terms (definitions + units)</h4>
+          <ul>
+            <li><strong>Effort (E):</strong> force applied to the machine (unit: N)</li>
+            <li><strong>Load (L):</strong> force exerted by the machine / force overcome (unit: N)</li>
+            <li><strong>Mechanical Advantage (M.A):</strong> <span style="font-weight:900;">M.A = Load / Effort</span> (no unit)</li>
+            <li><strong>Velocity Ratio (V.R):</strong> <span style="font-weight:900;">V.R = D<sub>E</sub> / D<sub>L</sub></span> (no unit)</li>
+            <li><strong>Efficiency (η):</strong>
+              <span style="font-weight:900;">η = (Work output / Work input) × 100%</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="concept-box">
+          <h4>Most tested machine identity (memorise)</h4>
+          <p style="margin:0;">
+            Since <strong>Work output = L×D<sub>L</sub></strong> and <strong>Work input = E×D<sub>E</sub></strong>:<br/>
+            <span style="font-weight:900;">η = (L×D<sub>L</sub>)/(E×D<sub>E</sub>) × 100% = (M.A / V.R) × 100%</span>
+          </p>
+        </div>
+
+        <details class="note-section">
+          <summary id="factors-ma-eff">Factors affecting M.A and efficiency</summary>
+          <ul>
+            <li><strong>Friction</strong> between moving parts (more friction → lower M.A and lower efficiency).</li>
+            <li><strong>Weight of parts lifted</strong> (heavier moving parts → lower M.A and lower efficiency).</li>
+          </ul>
+          <div class="concept-box">
+            <p style="margin:0;">
+              This is why <strong>efficiency is always less than 100%</strong> for real machines.
+            </p>
+          </div>
+        </details>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="simple-machines">12) Simple machines (formulas for V.R)</summary>
+
+        <details class="note-section" open>
+          <summary id="levers">A) Levers</summary>
+          <p>
+            A lever works using the <strong>principle of moments</strong>. It has a pivot (fulcrum), effort arm (EA), load arm (LA).
+          </p>
+          <div class="concept-box">
+            <p style="margin:0;">
+              <strong>V.R of a lever:</strong> <span style="font-weight:900;">V.R = EA / LA</span>
+            </p>
+          </div>
+
+          <div class="concept-box">
+            <h4>Lever sketch</h4>
+            <svg viewBox="0 0 520 190" width="100%" height="190" role="img" aria-label="Lever showing effort arm and load arm"
+                 style="border:1px solid #e2e8f0; border-radius:12px; background:#fff;">
+              <line x1="70" y1="95" x2="470" y2="95" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+              <polygon points="255,130 285,130 270,95" fill="#94a3b8" stroke="#0f172a"/>
+              <text x="258" y="150" font-size="12" fill="#0f172a" font-weight="800">Pivot</text>
+
+              <circle cx="120" cy="95" r="10" fill="#22c55e"/>
+              <text x="90" y="80" font-size="12" fill="#0f172a" font-weight="800">Effort (E)</text>
+              <line x1="120" y1="95" x2="120" y2="40" stroke="#22c55e" stroke-width="3"/>
+              <polygon points="115,50 125,50 120,40" fill="#22c55e"/>
+
+              <rect x="410" y="85" width="22" height="22" rx="4" fill="#ef4444"/>
+              <text x="395" y="80" font-size="12" fill="#0f172a" font-weight="800">Load (L)</text>
+              <line x1="421" y1="95" x2="421" y2="150" stroke="#ef4444" stroke-width="3"/>
+              <polygon points="416,140 426,140 421,150" fill="#ef4444"/>
+
+              <line x1="120" y1="165" x2="270" y2="165" stroke="#0f172a" stroke-width="2" stroke-dasharray="4,4"/>
+              <text x="165" y="182" font-size="12" fill="#0f172a" font-weight="800">EA</text>
+
+              <line x1="270" y1="165" x2="421" y2="165" stroke="#0f172a" stroke-width="2" stroke-dasharray="4,4"/>
+              <text x="332" y="182" font-size="12" fill="#0f172a" font-weight="800">LA</text>
+            </svg>
+          </div>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="wheel-axle">B) Wheel and axle</summary>
+          <p>
+            A large wheel of radius <strong>R</strong> is fixed to an axle of radius <strong>r</strong>.
+            Effort applied at wheel; load attached to axle.
+          </p>
+          <div class="concept-box">
+            <p style="margin:0;">
+              <strong>V.R:</strong> <span style="font-weight:900;">V.R = R / r</span>
+            </p>
+          </div>
+
+          <details class="note-section">
+            <summary id="wheel-axle-example">Example (KCSE pattern)</summary>
+            <p>Load 300 N, effort 50 N, wheel radius 0.85 m, axle radius 0.10 m.</p>
+            <ul>
+              <li>M.A = L/E = 300/50 = <strong>6</strong></li>
+              <li>V.R = R/r = 0.85/0.10 = <strong>8.5</strong></li>
+              <li>η = (M.A/V.R)×100 = (6/8.5)×100 = <strong>70.6%</strong> (approx.)</li>
+            </ul>
+          </details>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="inclined-plane">C) Inclined plane</summary>
+          <p>
+            If the plane makes angle θ with horizontal:
+          </p>
+          <div class="concept-box">
+            <p style="margin:0;">
+              <strong>V.R:</strong> <span style="font-weight:900;">V.R = Effort distance / Load distance = L / h = 1 / sinθ</span>
+            </p>
+          </div>
+
+          <details class="note-section">
+            <summary id="inclined-example">Example (effort + friction work)</summary>
+            <p>
+              Lift 50 kg through vertical height 4.0 m, plane angle 30°, efficiency 72%, g = 10 N kg<sup>−1</sup>.
+            </p>
+            <ul>
+              <li>V.R = 1/sin30° = <strong>2</strong></li>
+              <li>M.A = (η/100)×V.R = 0.72×2 = <strong>1.44</strong></li>
+              <li>Load = mg = 50×10 = <strong>500 N</strong></li>
+              <li>Effort = Load/M.A = 500/1.44 = <strong>347.2 N</strong></li>
+              <li>Work output = mgh = 50×10×4 = <strong>2000 J</strong></li>
+              <li>Effort distance along plane = h/sin30° = 4/0.5 = <strong>8 m</strong></li>
+              <li>Work input = effort × distance = 347.2×8 = <strong>2777.6 J</strong></li>
+              <li>Work against friction = input − output = 2777.6 − 2000 = <strong>777.6 J</strong></li>
+            </ul>
+          </details>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="screw">D) Screw (jack-screw)</summary>
+          <p>
+            The distance between successive threads is the <strong>pitch</strong>.
+            In one complete revolution, the screw advances by one pitch.
+          </p>
+          <div class="concept-box">
+            <p style="margin:0;">
+              <strong>V.R of screw:</strong> <span style="font-weight:900;">V.R = (circumference of handle circle) / pitch = 2πR / pitch</span>
+            </p>
+          </div>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="gears">E) Gears</summary>
+          <p>
+            A gear is a wheel with teeth. If driver has <strong>n</strong> teeth and driven has <strong>N</strong> teeth:
+          </p>
+          <div class="concept-box">
+            <p style="margin:0;">
+              <strong>V.R of gear system:</strong> <span style="font-weight:900;">V.R = (teeth on driven) / (teeth on driver) = N / n</span>
+            </p>
+          </div>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="pulleys">F) Pulleys</summary>
+          <p>
+            A pulley is a wheel with a groove for a rope/string.
+            <strong>Key rule:</strong> V.R is the <strong>number of ropes supporting the load</strong>.
+          </p>
+
+          <div class="concept-box">
+            <ul>
+              <li><strong>Single fixed pulley:</strong> V.R = 1</li>
+              <li><strong>Single movable pulley:</strong> V.R = 2</li>
+              <li><strong>Block and tackle:</strong> V.R depends on number of supporting rope segments (commonly 3, 4, 5, 6...)</li>
+            </ul>
+          </div>
+
+          <div class="concept-box">
+            <h4>Simple pulley sketch (fixed pulley)</h4>
+            <svg viewBox="0 0 520 220" width="100%" height="220" role="img" aria-label="Fixed pulley showing effort and load"
+                 style="border:1px solid #e2e8f0; border-radius:12px; background:#fff;">
+              <!-- support -->
+              <rect x="200" y="15" width="120" height="18" fill="#94a3b8"/>
+              <text x="215" y="55" font-size="12" fill="#0f172a" font-weight="800">Fixed support</text>
+
+              <!-- pulley wheel -->
+              <circle cx="260" cy="105" r="45" fill="rgba(99,102,241,0.12)" stroke="#0f172a" stroke-width="3"/>
+              <circle cx="260" cy="105" r="8" fill="#0f172a"/>
+
+              <!-- rope -->
+              <path d="M215,105 L215,185" stroke="#0f172a" stroke-width="3"/>
+              <path d="M305,105 L305,185" stroke="#0f172a" stroke-width="3"/>
+              <path d="M215,105 C230,60 290,60 305,105" stroke="#0f172a" stroke-width="3" fill="none"/>
+
+              <!-- load -->
+              <rect x="195" y="185" width="40" height="25" rx="4" fill="#ef4444"/>
+              <text x="165" y="215" font-size="12" fill="#0f172a" font-weight="800">Load (L)</text>
+
+              <!-- effort arrow -->
+              <line x1="305" y1="160" x2="305" y2="205" stroke="#22c55e" stroke-width="4"/>
+              <polygon points="298,195 312,195 305,210" fill="#22c55e"/>
+              <text x="320" y="200" font-size="12" fill="#0f172a" font-weight="800">Effort (E) down</text>
+            </svg>
+          </div>
+
+          <details class="note-section">
+            <summary id="pulley-efficiency">Why pulley systems are not 100% efficient</summary>
+            <ul>
+              <li>Energy is lost in overcoming <strong>friction</strong> between rope and pulley.</li>
+              <li>Energy is lost in lifting the <strong>movable pulleys</strong> (their weight matters).</li>
+              <li>For an odd number of pulleys, it is convenient to have <strong>more fixed than movable</strong> to reduce losses.</li>
+            </ul>
+          </details>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="belt-drives">G) Pulley belts</summary>
+          <p>
+            If driver radius is <strong>R</strong> and driven radius is <strong>r</strong>, then:
+          </p>
+          <div class="concept-box">
+            <p style="margin:0;">
+              <strong>V.R:</strong> <span style="font-weight:900;">V.R = radius of driven / radius of driver = r / R</span>
+            </p>
+          </div>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="hydraulics">H) Hydraulic machines</summary>
+          <p>
+            In hydraulic machines, volume is conserved:
+            (distance moved by effort piston × area of effort piston) = (distance moved by load piston × area of load piston).
+          </p>
+          <div class="concept-box">
+            <p style="margin:0;">
+              If load piston radius = <strong>R</strong> and effort piston radius = <strong>r</strong>, then:<br/>
+              <strong>V.R</strong> = <span style="font-weight:900;">R² / r²</span>
+            </p>
+          </div>
+
+          <details class="note-section">
+            <summary id="hydraulic-example">Example (effort + energy wasted)</summary>
+            <p>
+              Effort piston radius = 1.4 cm, load piston radius = 7.0 cm, load = 120 kg, height = 2.5 m,
+              efficiency = 80%, g = 10 N kg<sup>−1</sup>.
+            </p>
+            <ul>
+              <li>V.R = (7/1.4)² = (5)² = <strong>25</strong></li>
+              <li>M.A = (η/100)×V.R = 0.8×25 = <strong>20</strong></li>
+              <li>Load = mg = 120×10 = <strong>1200 N</strong></li>
+              <li>Effort = Load/M.A = 1200/20 = <strong>60 N</strong></li>
+              <li>Work output = mgh = 120×10×2.5 = <strong>3000 J</strong></li>
+              <li>Work input = output×100/80 = 3000×100/80 = <strong>3750 J</strong></li>
+              <li>Energy wasted = input − output = 3750 − 3000 = <strong>750 J</strong></li>
+            </ul>
+          </details>
+        </details>
+
+      </details>
+
+      <details class="note-section" open>
+        <summary id="reality">13) Classroom Reality: how to revise this topic with low equipment</summary>
+        <div class="concept-box" style="border-left-color:#10b981;">
+          <h4 style="margin-top:0;">You don’t need fancy lab gear</h4>
+          <ul>
+            <li><strong>Work & power:</strong> use stairs + stopwatch (phone) + student mass (approx.) + g = 10.</li>
+            <li><strong>P.E:</strong> lifting books / jerrycan / stone to a known height.</li>
+            <li><strong>Springs:</strong> rubber band + ruler (just to “see” extension), then focus on formula.</li>
+            <li><strong>Pulleys:</strong> clothesline pulley / improvised wheel + rope, or just diagram + counting rope segments.</li>
+            <li><strong>Machines:</strong> bottle opener, spanner, wheelbarrow (lever classes show up everywhere).</li>
+          </ul>
+          <p style="margin:10px 0 0 0; color:#64748b; font-weight:800;">
+            KCSE secret: if you can state the definition, formula, unit, and give one clean example — you’re already dangerous.
+          </p>
+        </div>
       </details>
 
     </div>
 
     <!-- TAB 2: QUICK REVISION -->
     <div id="quick-revision" class="content-section">
-      <h2>QUICK REVISION SHEET</h2>
+      <h2>WORK, ENERGY, POWER & MACHINES — QUICK REVISION</h2>
 
       <div class="concept-box" style="border-left-color:#f59e0b;">
-        <h3 style="margin-top:0;">Essential Formulas</h3>
+        <h3 style="margin-top:0;">Must-remember formulas (KCSE)</h3>
         <ul>
-          <li>\( W = F \times d \)</li>
-          <li>\( K.E = \frac{1}{2}mv^2 \)</li>
-          <li>\( P.E = mgh \)</li>
-          <li>\( P.E_{\text{elastic}} = \frac{1}{2}ke^2 \)</li>
-          <li>\( \text{Power} = \frac{W}{t} = F \times v \)</li>
-          <li>\( M.A = \frac{L}{E} \)</li>
-          <li>\( \text{Efficiency} = \frac{M.A}{V.R} \times 100\% \)</li>
+          <li><strong>Work:</strong> W = Fd</li>
+          <li><strong>G.P.E:</strong> P.E = mgh</li>
+          <li><strong>K.E:</strong> K.E = ½mv²</li>
+          <li><strong>Elastic P.E:</strong> EPE = ½ke²</li>
+          <li><strong>Power:</strong> P = W/t and (constant speed) P = Fv</li>
+          <li><strong>M.A:</strong> M.A = L/E</li>
+          <li><strong>V.R:</strong> V.R = D<sub>E</sub>/D<sub>L</sub></li>
+          <li><strong>Efficiency:</strong> η = (M.A/V.R)×100%</li>
+          <li><strong>Wheel & axle:</strong> V.R = R/r</li>
+          <li><strong>Inclined plane:</strong> V.R = 1/sinθ = L/h</li>
+          <li><strong>Screw:</strong> V.R = 2πR/pitch</li>
+          <li><strong>Hydraulic:</strong> V.R = R²/r²</li>
+          <li><strong>Gears:</strong> V.R = teeth(driven)/teeth(driver)</li>
+          <li><strong>Pulleys:</strong> V.R = number of supporting ropes</li>
         </ul>
       </div>
 
-      <h3>Machine V.R. Cheat Sheet</h3>
-      <table class="table">
-          <tr><th>Machine</th><th>Velocity Ratio (V.R) Formula</th></tr>
-          <tr><td>Inclined Plane</td><td>\( \frac{L}{h} \) or \( \frac{1}{\sin \theta} \)</td></tr>
-          <tr><td>Wheel & Axle</td><td>\( \frac{R \text{ (wheel)}}{r \text{ (axle)}} \)</td></tr>
-          <tr><td>Gears</td><td>\( \frac{\text{Teeth}_{\text{driven}}}{\text{Teeth}_{\text{driver}}} \)</td></tr>
-          <tr><td>Screw Jack</td><td>\( \frac{2\pi R}{\text{pitch}} \)</td></tr>
-          <tr><td>Pulleys</td><td>Number of ropes supporting Load</td></tr>
-          <tr><td>Hydraulic</td><td>\( \frac{R^2 \text{ (load)}}{r^2 \text{ (effort)}} \)</td></tr>
-      </table>
-
-      <h3>Common KCSE Explanations</h3>
+      <h3 id="qr-defs">1) One-line definitions (write them like this)</h3>
       <ul>
-        <li><strong>Why efficiency < 100%:</strong> Energy is lost overcoming friction and lifting moving parts of the machine.</li>
-        <li><strong>M.A vs Load:</strong> M.A increases with load (friction becomes less significant relative to load).</li>
-        <li><strong>Efficiency vs Load:</strong> Efficiency increases with load initially, then becomes constant.</li>
+        <li><strong>Work:</strong> product of force and distance moved in the direction of the force.</li>
+        <li><strong>Energy:</strong> capacity to do work.</li>
+        <li><strong>Power:</strong> rate of doing work / rate of energy conversion.</li>
+        <li><strong>Machine:</strong> device that makes work easier by transferring force.</li>
       </ul>
+
+      <h3 id="qr-traps">2) KCSE traps (avoid losing easy marks)</h3>
+      <ul>
+        <li>If there is <strong>no displacement in direction of force</strong>, work done is <strong>zero</strong>.</li>
+        <li>Always include <strong>SI units</strong>: J, W, N, m, s.</li>
+        <li>Efficiency is a <strong>percentage</strong>. Real machines: <strong>η &lt; 100%</strong> because of losses.</li>
+        <li>For pulleys: don’t guess. <strong>Count rope segments supporting the load</strong>.</li>
+        <li>For inclined planes: make sure you use <strong>sinθ</strong> correctly.</li>
+      </ul>
+
+      <h3 id="qr-prompts">3) Memory prompts (short, sharp, exam-ready)</h3>
+      <ol>
+        <li>State the Law of Conservation of Energy.</li>
+        <li>Define work and give its SI unit.</li>
+        <li>Explain why pushing a wall does no work (physics meaning).</li>
+        <li>State and use P.E = mgh in a lifting question.</li>
+        <li>State and use K.E = ½mv² in a “bullet/stone” question.</li>
+        <li>Explain “work = area under force–distance graph”.</li>
+        <li>Define power and calculate it in a lifting problem.</li>
+        <li>Define M.A, V.R, efficiency and link them: η = (M.A/V.R)×100%.</li>
+        <li>State two reasons why efficiency is always less than 100%.</li>
+      </ol>
     </div>
 
     <!-- TAB 3: KCSE DRILL -->
     <div id="kcse-drill" class="content-section">
-      <h2>KCSE DRILL QUESTIONS</h2>
+      <h2>KCSE DRILL (Try on paper first, then mark yourself)</h2>
       <div id="kcse-container">
         <p style="color:#64748b; font-weight:700;">
-           (Questions loaded from kcseData below)
+          If this section appears blank, confirm your <code>main.js</code> includes the KCSE Drill loader.
+          (This page provides <code>kcseData</code>; the script renders it.)
         </p>
       </div>
     </div>
 
     <!-- TAB 4: MCQ QUIZ -->
     <div id="quiz-view" class="content-section">
-      <h2>MCQ Quiz (Instant Feedback)</h2>
+      <h2>MCQ Quiz (Instant feedback)</h2>
       <div id="quiz-container"></div>
     </div>
 
   </div>
 
   <!-- Back to top -->
-  <button id="back-to-top" title="Back to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+  <button id="back-to-top" title="Back to top">↑</button>
 
   <!-- =========================
        DATA: KCSE Drill Questions
        ========================= -->
   <script>
+    // KCSE Drill data for spaced review / marking-points style
+    // Each item: { prompt, marks, points[] }
     const kcseData = [
       {
-        prompt: "A stone mason lifts a stone of mass 24 kg from the ground to a wall 50m high. Calculate the potential energy gained by the stone.",
+        prompt: "State the Law of Conservation of Energy.",
         marks: 3,
         points: [
-            "Formula: P.E = mgh",
-            "Substitution: 24 × 10 × 50",
-            "Answer: 12,000 J (or 12 kJ)"
+          "States that energy cannot be created or destroyed",
+          "States that energy can only be transformed from one form to another",
+          "Gives the statement clearly and correctly (no extra wrong additions)"
         ]
       },
       {
-        prompt: "State the law of conservation of energy.",
-        marks: 1,
+        prompt: "Define: (i) Work (ii) Energy (iii) Power and state the SI unit of each.",
+        marks: 9,
         points: [
-            "Energy can neither be created nor destroyed but can only be transformed from one form to another."
+          "Work: product of force and distance moved in direction of force (W = Fd)",
+          "Unit of work: joule (J) and 1 J = 1 N m",
+          "Energy: capacity to do work",
+          "Energy unit: joule (J)",
+          "Power: rate of doing work / rate of energy conversion",
+          "Power unit: watt (W) and 1 W = 1 J s−1",
+          "Definitions are clear, not mixed up",
+          "Correct symbols and units written",
+          "Uses correct SI language"
         ]
       },
       {
-        prompt: "A force of 7.5 N stretches a spring by 5 cm. Calculate the work done in stretching this spring by 8.0 cm.",
+        prompt: "A stone mason lifts a stone of mass 15 kg through a height of 2.0 m. Calculate the work done. (Take g = 10 N kg−1)",
+        marks: 5,
+        points: [
+          "Identifies force = weight = mg",
+          "Computes F = 15 × 10 = 150 N",
+          "Uses W = Fd with d = 2.0 m",
+          "Computes W = 150 × 2 = 300 J",
+          "Gives correct unit (J)"
+        ]
+      },
+      {
+        prompt: "Explain what is meant by: 'Work done equals the area under a force–distance graph.'",
         marks: 4,
         points: [
-            "Find spring constant k: F = ke => k = 7.5/0.05 = 150 N/m",
-            "Formula for Work: W = 1/2 ke²",
-            "Substitution: 0.5 × 150 × (0.08)²",
-            "Answer: 0.48 J"
+          "States that work done is energy spent by the force",
+          "States that on an F–d graph, the area under the curve represents Σ(F × small distance)",
+          "Links area to work done (units N×m = J)",
+          "Explanation is clear and correct"
         ]
       },
       {
-        prompt: "An electric motor raises a 50 kg load at a constant velocity. Calculate the power if it takes 40 seconds to raise the load through a height of 24 m.",
-        marks: 3,
+        prompt: "A bullet of mass 20 g travelling at 400 m s−1 is stopped by a wall. Calculate the energy transferred to the wall.",
+        marks: 6,
         points: [
-            "Work done = mgh = 50 × 10 × 24 = 12000 J",
-            "Power = Work / Time",
-            "Substitution: 12000 / 40",
-            "Answer: 300 W"
+          "Converts mass: 20 g = 0.02 kg",
+          "Uses K.E = ½mv²",
+          "Substitutes correctly: ½ × 0.02 × 400²",
+          "Computes 400² = 160000",
+          "Computes energy = 0.01 × 160000 = 1600 J",
+          "Correct unit (J)"
         ]
       },
       {
-        prompt: "State TWO reasons why the efficiency of a machine is always less than 100%.",
-        marks: 2,
+        prompt: "A load of 100 N is raised through 20 m in 50 s. Calculate: (i) gain in P.E (ii) power developed.",
+        marks: 7,
         points: [
-            "Work is done against friction between moving parts.",
-            "Work is done to lift the weight of the moving parts of the machine itself."
+          "Recognizes gain in P.E = work done = F × d",
+          "Computes W = 100 × 20 = 2000 J",
+          "Uses P = W/t",
+          "Computes P = 2000/50 = 40 W",
+          "Correct units J and W",
+          "Clearly labels (i) and (ii)",
+          "Correct final answers"
         ]
       },
       {
-        prompt: "A block and tackle system has a velocity ratio of 5 and an efficiency of 80%. If it is used to lift a load of 200 kg, calculate the effort applied.",
-        marks: 4,
+        prompt: "A machine uses an effort of 400 N to raise a load of 600 N. If efficiency is 75%, determine its velocity ratio.",
+        marks: 7,
         points: [
-            "Efficiency = (M.A / V.R) × 100",
-            "0.8 = M.A / 5  => M.A = 4",
-            "M.A = Load / Effort => 4 = (200 × 10) / Effort",
-            "Effort = 2000 / 4 = 500 N"
+          "Computes M.A = L/E = 600/400 = 1.5",
+          "Uses η = (M.A/V.R) × 100%",
+          "Substitutes η = 75%",
+          "Rearranges to V.R = (M.A × 100)/η",
+          "Computes V.R = (1.5 × 100)/75 = 2.0",
+          "States V.R has no unit",
+          "Correct final answer"
         ]
       },
       {
-        prompt: "An inclined plane of length 12m and vertical height 3m is used to lift a load L. Determine the velocity ratio of the plane.",
-        marks: 2,
+        prompt: "A wheel and axle raises a load of 300 N using effort 50 N. Radii of wheel and axle are 0.85 m and 0.10 m. Find M.A, V.R and efficiency.",
+        marks: 9,
         points: [
-            "V.R = Length / Height",
-            "V.R = 12 / 3",
-            "V.R = 4"
+          "Computes M.A = 300/50 = 6",
+          "Computes V.R = R/r = 0.85/0.10 = 8.5",
+          "Uses η = (M.A/V.R) × 100%",
+          "Computes η = (6/8.5) × 100%",
+          "Gets approx 70.6%",
+          "Shows steps clearly",
+          "Correct units/notes (ratios no unit; efficiency %)",
+          "Final answers clearly labelled",
+          "No formula mix-up"
         ]
       },
       {
-        prompt: "In a wheel and axle system, the radius of the wheel is 50 cm and the radius of the axle is 10 cm. The system is 75% efficient. Calculate the effort required to lift a load of 400 N.",
-        marks: 4,
+        prompt: "A 50 kg load is raised up an inclined plane to height 4.0 m. Plane angle is 30° and efficiency is 72%. Find (a) effort (b) work done against friction. (g = 10 N kg−1)",
+        marks: 11,
         points: [
-            "V.R = R/r = 50/10 = 5",
-            "Efficiency = M.A / V.R => 0.75 = M.A / 5",
-            "M.A = 3.75",
-            "Effort = Load / M.A = 400 / 3.75",
-            "Answer: 106.67 N"
+          "Computes V.R = 1/sin30 = 2",
+          "Computes M.A = (72/100) × 2 = 1.44",
+          "Computes load = mg = 50×10 = 500 N",
+          "Effort = load/M.A = 500/1.44 = 347.2 N",
+          "Computes work output = mgh = 2000 J",
+          "Computes plane length/effort distance = h/sin30 = 8 m",
+          "Computes work input = effort × distance = 347.2×8 = 2777.6 J",
+          "Work against friction = input − output = 777.6 J",
+          "Correct units",
+          "Answers labelled (a) and (b)",
+          "Logical working shown"
         ]
       },
       {
-        prompt: "A hydraulic press has an effort piston area of 0.01 m² and a load piston area of 0.2 m². A force of 70 N is applied to the effort piston. Calculate the force exerted on the load piston (assume 100% efficiency).",
-        marks: 3,
+        prompt: "A hydraulic lift has effort piston radius 1.4 cm and load piston radius 7.0 cm. It raises 120 kg through 2.5 m. If efficiency is 80%, find (a) effort (b) energy wasted. (g = 10 N kg−1)",
+        marks: 12,
         points: [
-            "Pressure is constant: F1/A1 = F2/A2",
-            "70 / 0.01 = F_load / 0.2",
-            "F_load = 70 × (0.2 / 0.01)",
-            "Answer: 1400 N"
+          "Computes V.R = (R²/r²) = (7/1.4)² = 25",
+          "Computes M.A = (80/100) × 25 = 20",
+          "Computes load = mg = 120×10 = 1200 N",
+          "Effort = load/M.A = 1200/20 = 60 N",
+          "Computes work output = mgh = 120×10×2.5 = 3000 J",
+          "Uses efficiency = output/input",
+          "Computes input = 3000×100/80 = 3750 J",
+          "Energy wasted = input − output = 750 J",
+          "Correct units",
+          "Answers labelled (a) and (b)",
+          "Clear working",
+          "Correct final values"
         ]
       }
     ];
@@ -319,66 +902,68 @@
        DATA: MCQ Quiz Questions
        ========================= -->
   <script>
+    // quizData format:
+    // { question: "", options: [], correct: <index>, explanation: "" }
     const quizData = [
       {
-        question: "Which of the following is the correct SI unit for Work?",
-        options: ["Watt", "Joule", "Newton", "Pascal"],
+        question: "The SI unit of work is:",
+        options: ["Watt (W)", "Joule (J)", "Newton (N)", "Kilowatt-hour (kWh)"],
         correct: 1,
-        explanation: "The SI unit for Work and Energy is the Joule (J). Watt is for Power."
+        explanation: "Work is measured in joules (J). 1 J = 1 N m."
       },
       {
-        question: "A boy carries a bag of cement weighing 500 N horizontally across a room 10 m wide. How much work does he do on the bag?",
-        options: ["5000 J", "50 J", "0 J", "500 J"],
-        correct: 2,
-        explanation: "Work is Force × Distance moved IN THE DIRECTION of force. Carrying horizontally means force (up) is perpendicular to motion, so Work = 0."
-      },
-      {
-        question: "The Velocity Ratio of a single movable pulley is:",
-        options: ["1", "2", "3", "Depends on radius"],
-        correct: 1,
-        explanation: "A single movable pulley is supported by 2 rope segments, so V.R = 2."
-      },
-      {
-        question: "Which expression represents the Velocity Ratio of an inclined plane?",
-        options: ["Height / Length", "1 / sin θ", "sin θ", "Load / Effort"],
-        correct: 1,
-        explanation: "V.R = Distance Effort / Distance Load = Length / Height = 1 / sin θ."
-      },
-      {
-        question: "Efficiency of a machine is defined as:",
-        options: ["(V.R / M.A) × 100", "(Work Output / Work Input) × 100", "(Load / Effort) × 100", "(Effort Distance / Load Distance) × 100"],
-        correct: 1,
-        explanation: "Efficiency is the ratio of useful Work Output to the Work Input."
-      },
-      {
-        question: "If a machine has a V.R of 5 and M.A of 4, what is its efficiency?",
-        options: ["125%", "80%", "20%", "45%"],
-        correct: 1,
-        explanation: "Efficiency = (M.A / V.R) × 100 = (4/5) × 100 = 80%."
-      },
-      {
-        question: "Kinetic energy is given by the formula:",
-        options: ["mgh", "mv", "1/2 mv²", "ma"],
-        correct: 2,
-        explanation: "K.E = 1/2 mv²."
-      },
-      {
-        question: "In a hydraulic machine, the V.R is determined by:",
-        options: ["Ratio of areas of pistons", "Ratio of force applied", "Viscosity of fluid", "Length of the handle only"],
+        question: "Work is done when:",
+        options: ["A force is applied and there is displacement in the direction of the force", "A force is applied and the object heats up", "An object moves but no force acts", "A person pushes a wall until tired"],
         correct: 0,
-        explanation: "V.R in hydraulics is the ratio of the Load Piston Area to the Effort Piston Area (A/a) or (R²/r²)."
+        explanation: "KCSE wording: work requires displacement in the direction of the applied force."
+      },
+      {
+        question: "Which is the correct formula for gravitational potential energy gained?",
+        options: ["P.E = ½mv²", "P.E = Fd", "P.E = mgh", "P.E = ke"],
+        correct: 2,
+        explanation: "Gravitational potential energy gained when raised through height h is mgh."
+      },
+      {
+        question: "A 0.02 kg bullet has speed 400 m s−1. Its kinetic energy is:",
+        options: ["160 J", "800 J", "1600 J", "3200 J"],
+        correct: 2,
+        explanation: "K.E = ½mv² = 0.5×0.02×400² = 0.01×160000 = 1600 J."
       },
       {
         question: "Power is best defined as:",
-        options: ["Ability to do work", "Product of force and distance", "Rate of doing work", "Total energy consumed"],
-        correct: 2,
-        explanation: "Power is the rate at which work is done (Work / Time)."
+        options: ["Work done per unit distance", "Rate of doing work", "Force per unit area", "Energy per unit distance"],
+        correct: 1,
+        explanation: "Power = work done per unit time (rate of energy conversion)."
       },
       {
-        question: "What happens to the efficiency of a pulley system as the load increases?",
-        options: ["Decreases", "Remains constant", "Increases", "Becomes zero"],
+        question: "If a machine has M.A = 4 and V.R = 5, its efficiency is:",
+        options: ["20%", "80%", "125%", "1.25%"],
+        correct: 1,
+        explanation: "η = (M.A/V.R)×100% = (4/5)×100% = 80%."
+      },
+      {
+        question: "Mechanical advantage (M.A) is:",
+        options: ["Effort/Load", "Load/Effort", "Distance moved by effort / distance moved by load", "Work input / work output"],
+        correct: 1,
+        explanation: "M.A = Load ÷ Effort."
+      },
+      {
+        question: "Velocity ratio (V.R) is:",
+        options: ["Load/Effort", "Effort/Load", "Distance moved by effort / distance moved by load", "Output power / input power"],
         correct: 2,
-        explanation: "Efficiency increases because the weight of the moving pulley (which is wasted work) becomes a smaller fraction of the total load lifted."
+        explanation: "V.R = D_E / D_L (a ratio, so no unit)."
+      },
+      {
+        question: "For a wheel and axle of wheel radius R and axle radius r, the velocity ratio is:",
+        options: ["r/R", "R/r", "R + r", "R − r"],
+        correct: 1,
+        explanation: "In one turn: effort point moves 2πR while load moves 2πr, so V.R = R/r."
+      },
+      {
+        question: "Why is the efficiency of a real machine always less than 100%?",
+        options: ["Because work output is always zero", "Because of friction and weight of moving parts", "Because load is always smaller than effort", "Because velocity ratio has units"],
+        correct: 1,
+        explanation: "Energy is lost to friction and to lifting/moving machine parts, so output < input."
       }
     ];
   </script>
