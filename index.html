@@ -13,18 +13,79 @@
             <p>Form 4: Focused Revision & Active Recall</p>
         </div>
     </header>
+
     <div class="container">
         <h2>Subject Library</h2>
-        <div class="subject-grid">
-            <a href="physics/" class="card"><h3>⚛️ Physics</h3><p>Select Topic</p></a>
-            <a href="mathematics/" class="card"><h3>📐 Mathematics</h3><p>Select Topic</p></a>
-            <a href="history/" class="card"><h3>🌍 History</h3><p>Select Topic</p></a>
-            <a href="chemistry/" class="card"><h3>🧪 Chemistry</h3><p>Select Topic</p></a>
-            <a href="biology/" class="card"><h3>🧬 Biology</h3><p>Select Topic</p></a>
-            <a href="computer/" class="card"><h3>💻 Computer</h3><p>Select Topic</p></a>
-            <a href="english/" class="card"><h3>📖 English</h3><p>Select Topic</p></a>
-            <a href="kiswahili/" class="card"><h3>🗣️ Kiswahili</h3><p>Select Topic</p></a>
+
+        <div class="subject-grid" id="subject-grid">
+            <div class="card subject-card" data-subject="physics">
+                <div class="card-head">
+                    <h3>⚛️ Physics</h3>
+                    <span class="card-sub">Select Topic</span>
+                </div>
+                <div class="topics" hidden></div>
+            </div>
+
+            <div class="card subject-card" data-subject="mathematics">
+                <div class="card-head">
+                    <h3>📐 Mathematics</h3>
+                    <span class="card-sub">Select Topic</span>
+                </div>
+                <div class="topics" hidden></div>
+            </div>
+
+            <div class="card subject-card" data-subject="history">
+                <div class="card-head">
+                    <h3>🌍 History</h3>
+                    <span class="card-sub">Select Topic</span>
+                </div>
+                <div class="topics" hidden></div>
+            </div>
+
+            <div class="card subject-card" data-subject="chemistry">
+                <div class="card-head">
+                    <h3>🧪 Chemistry</h3>
+                    <span class="card-sub">Select Topic</span>
+                </div>
+                <div class="topics" hidden></div>
+            </div>
+
+            <div class="card subject-card" data-subject="biology">
+                <div class="card-head">
+                    <h3>🧬 Biology</h3>
+                    <span class="card-sub">Select Topic</span>
+                </div>
+                <div class="topics" hidden></div>
+            </div>
+
+            <div class="card subject-card" data-subject="computer">
+                <div class="card-head">
+                    <h3>💻 Computer</h3>
+                    <span class="card-sub">Select Topic</span>
+                </div>
+                <div class="topics" hidden></div>
+            </div>
+
+            <div class="card subject-card" data-subject="english">
+                <div class="card-head">
+                    <h3>📖 English</h3>
+                    <span class="card-sub">Select Topic</span>
+                </div>
+                <div class="topics" hidden></div>
+            </div>
+
+            <div class="card subject-card" data-subject="kiswahili">
+                <div class="card-head">
+                    <h3>🗣️ Kiswahili</h3>
+                    <span class="card-sub">Select Topic</span>
+                </div>
+                <div class="topics" hidden></div>
+            </div>
         </div>
     </div>
+
+    <!-- Load topic manifest first -->
+    <script src="topics.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
