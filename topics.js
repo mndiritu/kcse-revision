@@ -3,7 +3,22 @@
 // Regenerate using: python3 scripts/generate_topics_manifest.py
 
 window.KCSE_TOPICS = {
-  "physics": [],
+  "physics": [
+    {
+      "title": "Newton’s Laws of Motion (Form 4)",
+      "path": "physics/newtons-laws-of-motion.html",
+      "tags": [
+        "Form 4",
+        "Physics",
+        "KCSE",
+        "Newtons laws",
+        "motion",
+        "momentum",
+        "impulse",
+        "friction"
+      ]
+    }
+  ],
   "mathematics": [],
   "history": [
     {
