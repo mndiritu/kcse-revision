@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newton’s Laws of Motion (Form 4)</title>
+  <meta name="tags" content="Form 4, KCSE, Physics, Newtons laws, motion, momentum, impulse, friction" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="../index.html">&larr; Back to Dashboard</a>
+      <h1 id="topic-title">Newton’s Laws of Motion (Form 4)</h1>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Navigation Tabs -->
+    <div class="tabs">
+      <button class="tab-btn active" data-target="writing-notes">📝 Notes for Writing</button>
+      <button class="tab-btn" data-target="quick-revision">⚡ Quick Revision</button>
+      <button class="tab-btn" data-target="kcse-drill">🎯 KCSE Drill</button>
+      <button class="tab-btn" data-target="quiz-view">✍️ MCQ Quiz</button>
+    </div>
+
+    <!-- TOOLS (Quick Jump + Expand/Collapse) -->
+    <div class="concept-box" style="margin-top: 14px;">
+      <h3 style="margin-top:0;">Topic Tools</h3>
+      <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+        <label style="font-weight:800; color:#334155;">
+          Quick Jump:
+          <select id="quick-jump" style="margin-left:6px; padding:8px 10px; border-radius:8px; border:1px solid #e2e8f0;">
+            <option value="">Select a section…</option>
+          </select>
+        </label>
+        <button id="jump-btn" class="reveal-btn" type="button">Go</button>
+        <button id="expand-all" class="reveal-btn" type="button">Expand all</button>
+        <button id="collapse-all" class="reveal-btn" type="button">Collapse all</button>
+      </div>
+      <p style="margin:10px 0 0 0; color:#64748b; font-weight:700;">
+        Tip: Copy only the bold lines + the formulas first. Then add one example. That builds memory muscle without suffering.
+      </p>
+    </div>
+
+    <!-- TAB 1: NOTES FOR WRITING -->
+    <div id="writing-notes" class="content-section active">
+      <h2>NEWTON’S LAWS OF MOTION — WRITING NOTES (KCSE)</h2>
+
+      <details class="note-section" open>
+        <summary id="intro">1) Overview: What this topic is about</summary>
+        <p>
+          This topic explains how forces affect motion. You must know:
+          <strong>Newton’s 1st law (Inertia), 2nd law (F = ma), 3rd law (Action–Reaction)</strong>,
+          plus <strong>momentum</strong>, <strong>impulse</strong>, <strong>conservation of momentum</strong> and common applications.
+        </p>
+        <div class="concept-box">
+          <h4>Key exam language</h4>
+          <ul>
+            <li><strong>Resultant force</strong> = net force (sum of forces).</li>
+            <li><strong>Acceleration</strong> is change of velocity per time: <strong>a = (v − u)/t</strong>.</li>
+            <li><strong>Momentum</strong> measures “quantity of motion”: <strong>p = mv</strong>.</li>
+            <li><strong>Impulse</strong> links force and time: <strong>Impulse = Ft = change in momentum (Δp)</strong>.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="first-law">2) Newton’s First Law (Law of Inertia)</summary>
+        <p><strong>Statement:</strong> A body remains at rest or moves with uniform velocity in a straight line unless acted upon by an external resultant force.</p>
+
+        <div class="concept-box">
+          <h4>Inertia (Definition)</h4>
+          <p>
+            <strong>Inertia</strong> is the tendency of a body to resist change in its state of motion.
+            A moving body “resists stopping”, and a stationary body “resists starting to move”.
+          </p>
+        </div>
+
+        <h4>Everyday examples (KCSE-friendly)</h4>
+        <ul>
+          <li>When a moving bus stops suddenly, passengers lurch forward (they tend to keep moving).</li>
+          <li>When a bus starts suddenly, passengers jerk backward (they resist motion).</li>
+          <li>Seat belts and airbags reduce injuries by controlling effects of inertia.</li>
+        </ul>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="momentum">3) Momentum</summary>
+        <p><strong>Definition:</strong> Momentum is the product of mass and velocity.</p>
+        <div class="concept-box">
+          <p><strong>Formula:</strong> <span style="font-weight:900;">p = mv</span></p>
+          <p><strong>SI unit:</strong> kg m s<sup>−1</sup></p>
+          <p><strong>Nature:</strong> Momentum is a <strong>vector</strong> (has magnitude and direction). Direction is same as velocity.</p>
+        </div>
+
+        <h4>Worked Example (pattern you can copy)</h4>
+        <p><strong>Example:</strong> A van of mass 3 metric tonnes travels at 72 km h<sup>−1</sup>. Find momentum.</p>
+        <ul>
+          <li>m = 3 × 10<sup>3</sup> kg</li>
+          <li>v = 72 km h<sup>−1</sup> = 20 m s<sup>−1</sup></li>
+          <li>p = mv = 3 × 10<sup>3</sup> × 20 = <strong>6 × 10<sup>4</sup> kg m s<sup>−1</sup></strong></li>
+        </ul>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="second-law">4) Newton’s Second Law (Force–Mass–Acceleration)</summary>
+        <p>
+          <strong>Statement:</strong> The rate of change of momentum is directly proportional to the resultant external force,
+          and occurs in the direction of that force.
+        </p>
+
+        <div class="concept-box">
+          <h4>Derivation you should remember (short)</h4>
+          <p>
+            Change in momentum = mv − mu<br />
+            Rate of change = (mv − mu)/t<br />
+            But acceleration a = (v − u)/t<br />
+            Therefore, <strong>F ∝ ma</strong> and the constant becomes 1 in SI units:
+          </p>
+          <p style="font-weight:900; font-size:1.1rem;">F = ma</p>
+          <p><strong>Definition of a newton (N):</strong> 1 N is the force that gives 1 kg an acceleration of 1 m s<sup>−2</sup>.</p>
+        </div>
+
+        <h4>Typical KCSE calculations</h4>
+        <ul>
+          <li>Use <strong>F = ma</strong> when force is constant and acceleration is known.</li>
+          <li>Use <strong>a = (v − u)/t</strong> to get acceleration/retardation from speed change.</li>
+        </ul>
+
+        <div class="concept-box">
+          <h4>Example (braking force)</h4>
+          <p>
+            A car of mass 1200 kg travelling at 45 m s<sup>−1</sup> stops in 9 s.
+          </p>
+          <ul>
+            <li>a = (0 − 45)/9 = −5 m s<sup>−2</sup></li>
+            <li>F = ma = 1200 × (−5) = <strong>−6000 N</strong> (retarding force)</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="impulse">5) Impulse</summary>
+        <p><strong>Definition:</strong> Impulse is the product of force and the time for which it acts.</p>
+
+        <div class="concept-box">
+          <p><strong>Impulse:</strong> <span style="font-weight:900;">I = Ft</span></p>
+          <p><strong>SI unit:</strong> newton-second (N s)</p>
+          <p>
+            From Newton’s 2nd law: F = (mv − mu)/t  ⇒  <strong>Ft = mv − mu = Δp</strong><br />
+            So <strong>Impulse = change in momentum</strong>.
+          </p>
+        </div>
+
+        <h4>Why airbags/seatbelts help (KCSE explanation)</h4>
+        <p>
+          During a collision, momentum changes quickly. If the time of impact is made longer,
+          the impulsive force becomes smaller, reducing damage. Airbags, seatbelts, collapsible bumpers
+          increase collision time and reduce force.
+        </p>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="third-law">6) Newton’s Third Law (Action–Reaction)</summary>
+        <p>
+          <strong>Statement:</strong> For every action, there is an equal and opposite reaction.
+          If body P exerts a force on body Q, then Q exerts an equal and opposite force on P.
+        </p>
+        <ul>
+          <li>Walking: foot pushes ground backward; ground pushes you forward.</li>
+          <li>Jumping from a boat: you push the boat backward; boat pushes you forward (boat moves back due to low friction with water).</li>
+          <li>Block on table: block pushes table down; table pushes block up (reaction).</li>
+        </ul>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="lift">7) Apparent weight in a lift (elevator)</summary>
+        <p>
+          A weighing machine reads the <strong>reaction force</strong> from the lift floor.
+          This can be different from true weight depending on acceleration.
+        </p>
+
+        <div class="concept-box">
+          <h4>Results you must know</h4>
+          <ul>
+            <li><strong>Lift at rest / constant velocity:</strong> P = mg</li>
+            <li><strong>Lift accelerating upward (a):</strong> <strong>P = mg + ma</strong> (you feel heavier)</li>
+            <li><strong>Lift accelerating downward (a):</strong> <strong>P = mg − ma</strong> (you feel lighter)</li>
+            <li><strong>If a = g downward:</strong> P = 0 (weightlessness)</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="conservation">8) Conservation of Linear Momentum</summary>
+        <p>
+          <strong>Law:</strong> For a system of colliding bodies, total linear momentum remains constant
+          provided no external forces act.
+        </p>
+
+        <div class="concept-box">
+          <p style="font-weight:900;">m<sub>1</sub>u<sub>1</sub> + m<sub>2</sub>u<sub>2</sub> = m<sub>1</sub>v<sub>1</sub> + m<sub>2</sub>v<sub>2</sub></p>
+          <p>Choose a positive direction first (e.g., to the right). Velocities opposite that direction are negative.</p>
+        </div>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="collisions">9) Elastic vs Inelastic collisions</summary>
+        <div class="concept-box">
+          <h4>Elastic collision</h4>
+          <ul>
+            <li><strong>Momentum conserved</strong></li>
+            <li><strong>Kinetic energy conserved</strong></li>
+            <li>Bodies separate after collision.</li>
+          </ul>
+        </div>
+
+        <div class="concept-box">
+          <h4>Inelastic collision</h4>
+          <ul>
+            <li><strong>Momentum conserved</strong></li>
+            <li><strong>Kinetic energy NOT conserved</strong> (some becomes heat/sound/deformation)</li>
+            <li>In a perfectly inelastic collision, bodies <strong>coalesce</strong> and move together with a common velocity.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="recoil">10) Recoil and propulsion (applications)</summary>
+        <h4>Gun recoil</h4>
+        <p>
+          Initially, total momentum is zero. After firing, bullet momentum forward equals gun momentum backward
+          (equal and opposite).
+        </p>
+
+        <h4>Rocket and jet propulsion</h4>
+        <p>
+          Exhaust gases are pushed out at high speed, gaining momentum in one direction.
+          Rocket gains equal momentum in opposite direction (thrust).
+        </p>
+
+        <h4>Garden sprinkler</h4>
+        <p>
+          Water ejected through nozzles gains momentum; sprinkler rotates due to reaction.
+        </p>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="friction">11) Frictional force (as covered in the notes)</summary>
+        <p>
+          <strong>Friction</strong> is a force that opposes relative motion (or tendency to move) between surfaces in contact.
+          It acts opposite the direction of motion or pulling force.
+        </p>
+
+        <div class="concept-box">
+          <h4>Types</h4>
+          <ul>
+            <li><strong>Static/limiting friction (F<sub>s</sub>):</strong> force needed to just start motion<br />
+              <strong>F<sub>s</sub> = μ<sub>s</sub>R</strong>
+            </li>
+            <li><strong>Kinetic/sliding friction (F<sub>k</sub>):</strong> force needed to keep a body moving at constant speed<br />
+              <strong>F<sub>k</sub> = μ<sub>k</sub>R</strong>
+            </li>
+          </ul>
+          <p><strong>Note:</strong> μ<sub>s</sub> &gt; μ<sub>k</sub></p>
+        </div>
+
+        <div class="concept-box">
+          <h4>Laws of friction (summary)</h4>
+          <ol>
+            <li>Friction opposes relative motion.</li>
+            <li>Independent of area of contact (for constant R).</li>
+            <li>Proportional to normal reaction R.</li>
+            <li>Kinetic friction independent of relative speed (approx.).</li>
+            <li>Depends on nature of surfaces.</li>
+          </ol>
+        </div>
+      </details>
+
+    </div>
+
+    <!-- TAB 2: QUICK REVISION -->
+    <div id="quick-revision" class="content-section">
+      <h2>NEWTON’S LAWS OF MOTION — QUICK REVISION (2-PAGE STYLE)</h2>
+
+      <div class="concept-box" style="border-left-color:#f59e0b;">
+        <h3 style="margin-top:0;">Must-remember formulas</h3>
+        <ul>
+          <li><strong>Momentum:</strong> p = mv</li>
+          <li><strong>Newton 2:</strong> F = ma</li>
+          <li><strong>Acceleration:</strong> a = (v − u)/t</li>
+          <li><strong>Impulse:</strong> I = Ft = Δp</li>
+          <li><strong>Lift apparent weight:</strong> Up: P = mg + ma; Down: P = mg − ma</li>
+          <li><strong>Conservation of momentum:</strong> m1u1 + m2u2 = m1v1 + m2v2</li>
+          <li><strong>Friction:</strong> Fs = μsR, Fk = μkR (and μs &gt; μk)</li>
+        </ul>
+      </div>
+
+      <h3 id="qr-laws">1) The 3 Newton’s Laws (one-liners)</h3>
+      <ul>
+        <li><strong>1st law (Inertia):</strong> stays at rest / uniform motion unless a resultant external force acts.</li>
+        <li><strong>2nd law:</strong> resultant force causes acceleration; F = ma (rate of change of momentum).</li>
+        <li><strong>3rd law:</strong> action and reaction are equal and opposite.</li>
+      </ul>
+
+      <h3 id="qr-exam">2) KCSE exam traps (avoid these)</h3>
+      <ul>
+        <li>For collisions, choose a positive direction first; opposite velocities are negative.</li>
+        <li>Retardation is negative acceleration (but magnitude is positive “deceleration”).</li>
+        <li>Impulse depends on time: bigger time → smaller force for same Δp.</li>
+        <li>Lift “feels heavier” when accelerating upward; “lighter” when accelerating downward.</li>
+        <li>Static friction is bigger than kinetic friction: μs &gt; μk.</li>
+      </ul>
+
+      <h3 id="qr-prompts">3) Short revision prompts (for memory muscle)</h3>
+      <ol>
+        <li>State Newton’s 1st law and define inertia.</li>
+        <li>Define momentum and state its SI unit.</li>
+        <li>Derive F = ma from rate of change of momentum (very short).</li>
+        <li>Explain how airbags reduce injuries using impulse.</li>
+        <li>Explain why you feel heavier when a lift accelerates upward.</li>
+        <li>State the law of conservation of momentum and apply it to a collision.</li>
+        <li>Differentiate elastic and inelastic collisions.</li>
+        <li>Explain rocket motion using conservation of momentum.</li>
+        <li>Define friction; write Fs and Fk formulas.</li>
+      </ol>
+    </div>
+
+    <!-- TAB 3: KCSE DRILL -->
+    <div id="kcse-drill" class="content-section">
+      <h2>KCSE DRILL (Try on paper first, then mark yourself)</h2>
+      <div id="kcse-container">
+        <p style="color:#64748b; font-weight:700;">
+          If this section appears blank, confirm your <code>main.js</code> includes the KCSE Drill loader.
+          (This page provides <code>kcseData</code>; the script renders it.)
+        </p>
+      </div>
+    </div>
+
+    <!-- TAB 4: MCQ QUIZ -->
+    <div id="quiz-view" class="content-section">
+      <h2>MCQ Quiz (Instant feedback)</h2>
+      <div id="quiz-container"></div>
+    </div>
+
+  </div>
+
+  <!-- Back to top -->
+  <button id="back-to-top" title="Back to top">↑</button>
+
+  <!-- =========================
+       DATA: KCSE Drill Questions
+       ========================= -->
+  <script>
+    // KCSE Drill data for spaced review / marking-points style
+    // Each item: { prompt, marks, points[] }
+    const kcseData = [
+      {
+        prompt: "State Newton’s First Law of Motion (Law of Inertia).",
+        marks: 3,
+        points: [
+          "Mentions body remains at rest or uniform motion in a straight line",
+          "States ‘unless acted upon by an external/resultant force’",
+          "Correctly indicates ‘uniform velocity’ and ‘straight line’"
+        ]
+      },
+      {
+        prompt: "Define inertia and give ONE everyday example that shows inertia.",
+        marks: 4,
+        points: [
+          "Defines inertia as tendency to resist change in state of motion",
+          "Mentions resistance to starting motion OR stopping motion",
+          "Gives a correct example (e.g., passengers lurch forward when bus stops)",
+          "Links the example to ‘tendency to continue/rest’"
+        ]
+      },
+      {
+        prompt: "A van of mass 3.0 × 10^3 kg moves at 72 km h−1. Calculate its momentum.",
+        marks: 5,
+        points: [
+          "Converts 72 km h−1 to 20 m s−1",
+          "Uses p = mv",
+          "Substitutes correctly: p = 3.0×10^3 × 20",
+          "Gives correct answer 6.0×10^4 kg m s−1",
+          "Correct unit (kg m s−1)"
+        ]
+      },
+      {
+        prompt: "State Newton’s Second Law of Motion and hence write the formula relating force, mass and acceleration.",
+        marks: 4,
+        points: [
+          "Mentions rate of change of momentum proportional to resultant force",
+          "Mentions direction is that of the force",
+          "Concludes F ∝ ma in SI",
+          "Writes F = ma correctly"
+        ]
+      },
+      {
+        prompt: "A car of mass 1200 kg travelling at 45 m s−1 is brought to rest in 9 s. Find (i) average retardation (ii) braking force.",
+        marks: 8,
+        points: [
+          "Identifies v = 0, u = 45 m s−1, t = 9 s",
+          "Calculates a = (v−u)/t = (0−45)/9",
+          "Gets a = −5 m s−2 (retardation magnitude 5)",
+          "Uses F = ma",
+          "Calculates F = 1200 × (−5)",
+          "Gets F = −6000 N",
+          "Mentions it is a retarding/braking force",
+          "Correct units"
+        ]
+      },
+      {
+        prompt: "Define impulse and show its relation to change in momentum.",
+        marks: 5,
+        points: [
+          "Defines impulse as product of force and time (I = Ft)",
+          "States SI unit N s",
+          "Uses F = (mv−mu)/t",
+          "Multiplies both sides by t to get Ft = mv − mu",
+          "Concludes impulse = change in momentum (Δp)"
+        ]
+      },
+      {
+        prompt: "A ball of mass 0.035 kg hits a wall normally at 20 m s−1 and rebounds at 16 m s−1. Find the impulse on the ball (take toward wall as negative).",
+        marks: 7,
+        points: [
+          "Chooses a direction and assigns signs consistently",
+          "Computes initial momentum p1 = (−0.035×20) = −0.7 N s",
+          "Computes final momentum p2 = (0.035×16) = 0.56 N s",
+          "Uses impulse = Δp = p2 − p1",
+          "Calculates Δp = 0.56 − (−0.7) = 1.26 N s",
+          "Correct unit N s",
+          "Correct sign reasoning / clear statement"
+        ]
+      },
+      {
+        prompt: "A 4 kg mass hangs on a spring balance in a lift. Find the reading when the lift accelerates upward at 0.3 m s−2 (take g = 10 m s−2).",
+        marks: 6,
+        points: [
+          "Recognizes apparent weight P = mg + ma",
+          "Uses m = 4 kg, g = 10",
+          "Calculates mg = 40 N",
+          "Calculates ma = 4×0.3 = 1.2 N",
+          "Adds to get P = 41.2 N",
+          "Correct unit N"
+        ]
+      },
+      {
+        prompt: "Two bodies A (5 kg) and B (4 kg) collide head-on. A moves at 3 m s−1 to the right, B moves at 6 m s−1 to the left. They stick together. Find the common velocity.",
+        marks: 8,
+        points: [
+          "Chooses right as positive",
+          "Initial momentum of A: 5×3 = 15",
+          "Initial momentum of B: 4×(−6) = −24",
+          "Total initial momentum = 15 + (−24) = −9",
+          "Final mass = 9 kg",
+          "Uses conservation: −9 = 9v",
+          "Finds v = −1 m s−1",
+          "Interprets direction (to the left)"
+        ]
+      },
+      {
+        prompt: "A bullet of mass 0.005 kg is fired from a gun of mass 0.5 kg. If bullet speed is 350 m s−1, find the recoil speed of the gun.",
+        marks: 7,
+        points: [
+          "States total momentum initially = 0",
+          "Bullet momentum after firing = 0.005×350 = 1.75 kg m s−1",
+          "Uses conservation: 0 = 1.75 + 0.5v",
+          "Solves v = −1.75/0.5",
+          "Gets v = −3.5 m s−1",
+          "States recoil is opposite direction to bullet",
+          "Correct units"
+        ]
+      },
+      {
+        prompt: "Explain how airbags/seatbelts reduce injury in a collision using impulse ideas.",
+        marks: 5,
+        points: [
+          "Mentions collision involves change in momentum",
+          "Uses idea impulse = Ft = Δp",
+          "States for same Δp, increasing time reduces force",
+          "Airbags/seatbelts increase time of impact / cushion",
+          "Therefore reduces impulsive force and injuries"
+        ]
+      },
+      {
+        prompt: "A 30 kg box rests on a rough floor. Coefficient of friction μ = 0.6. Find the force required to just start moving it (take g = 10 m s−2).",
+        marks: 6,
+        points: [
+          "Recognizes limiting friction Fs = μR",
+          "Computes normal reaction R = mg = 30×10 = 300 N",
+          "Uses μ = 0.6",
+          "Calculates Fs = 0.6×300",
+          "Gets Fs = 180 N",
+          "Correct unit N"
+        ]
+      }
+    ];
+  </script>
+
+  <!-- =========================
+       DATA: MCQ Quiz Questions
+       ========================= -->
+  <script>
+    // quizData format:
+    // { question: "", options: [], correct: <index>, explanation: "" }
+    const quizData = [
+      {
+        question: "Newton’s First Law is also called:",
+        options: ["Law of Acceleration", "Law of Inertia", "Law of Action–Reaction", "Law of Gravitation"],
+        correct: 1,
+        explanation: "Newton’s 1st law describes inertia: tendency to resist change in motion."
+      },
+      {
+        question: "Inertia is best defined as the tendency of a body to:",
+        options: ["Increase its mass", "Resist change in its state of motion", "Move faster in a straight line", "Experience friction"],
+        correct: 1,
+        explanation: "Inertia is resistance to change in rest or motion."
+      },
+      {
+        question: "The SI unit of momentum is:",
+        options: ["N", "kg m s−1", "J", "N s−1"],
+        correct: 1,
+        explanation: "Momentum p = mv, so unit is kg × (m s−1) = kg m s−1."
+      },
+      {
+        question: "If a resultant force on a body is zero, the body will:",
+        options: ["Always stop", "Move with uniform velocity or remain at rest", "Accelerate", "Move in a circle"],
+        correct: 1,
+        explanation: "With no resultant force, there is no acceleration; motion stays constant (Newton 1)."
+      },
+      {
+        question: "Newton’s Second Law in SI units is:",
+        options: ["F = mv", "F = ma", "F = m/a", "F = at"],
+        correct: 1,
+        explanation: "The net force equals mass × acceleration."
+      },
+      {
+        question: "Impulse is equal to:",
+        options: ["mv", "Ft", "ma", "mg"],
+        correct: 1,
+        explanation: "Impulse I = force × time, and it equals change in momentum."
+      },
+      {
+        question: "Airbags reduce injuries mainly because they:",
+        options: ["Increase momentum", "Increase time of impact so force reduces", "Increase friction", "Reduce mass of passengers"],
+        correct: 1,
+        explanation: "For the same change in momentum, increasing collision time reduces force (Ft = Δp)."
+      },
+      {
+        question: "Newton’s Third Law states that:",
+        options: ["Energy is conserved", "For every action there is an equal and opposite reaction", "Friction is proportional to area", "Velocity is constant"],
+        correct: 1,
+        explanation: "Action–reaction forces are equal in magnitude and opposite in direction."
+      },
+      {
+        question: "A person in a lift feels heavier when the lift:",
+        options: ["Accelerates upward", "Accelerates downward", "Moves at constant speed downward", "Is stationary"],
+        correct: 0,
+        explanation: "Apparent weight P = mg + ma when accelerating upward."
+      },
+      {
+        question: "In a perfectly inelastic collision, the bodies:",
+        options: ["Bounce apart with same speeds", "Stick together and move with a common velocity", "Conserve kinetic energy", "Do not conserve momentum"],
+        correct: 1,
+        explanation: "Momentum is conserved, but kinetic energy is not; they coalesce and move together."
+      }
+    ];
+  </script>
+
+  <!-- Main script -->
+  <script src="../main.js" defer></script>
+</body>
+</html>
