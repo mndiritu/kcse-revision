@@ -17,6 +17,22 @@ window.KCSE_TOPICS = {
         "impulse",
         "friction"
       ]
+    },
+    {
+      "title": "Work, Energy, Power and Machines (Form 4)",
+      "path": "physics/work-energy-power-and-machines.html",
+      "tags": [
+        "Form 4",
+        "Physics",
+        "KCSE",
+        "Work",
+        "Energy",
+        "Power",
+        "Machines",
+        "Efficiency",
+        "MA",
+        "VR"
+      ]
     }
   ],
   "mathematics": [],
