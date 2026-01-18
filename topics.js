@@ -13,6 +13,22 @@ window.KCSE_TOPICS = {
         "Form 4",
         "History"
       ]
+    },
+    {
+      "title": "Colonial Administration (Form 3/4)",
+      "path": "history/colonial-administration.html",
+      "tags": [
+        "Form 4",
+        "History",
+        "Form 3",
+        "KCSE",
+        "colonialism",
+        "administration",
+        "indirect rule",
+        "direct rule",
+        "assimilation",
+        "association"
+      ]
     }
   ],
   "chemistry": [],
