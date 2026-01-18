@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic Revision</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html">&larr; Back to Dashboard</a>
+            <h1 id="topic-title">Topic Name Here</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-btn active" data-target="notes-view">📖 Revision Notes</button>
+            <button class="tab-btn" data-target="quiz-view">✍️ Interactive Quiz</button>
+        </div>
+        <div id="notes-view" class="content-section active notes-content">
+            <p>Notes content will go here...</p>
+        </div>
+        <div id="quiz-view" class="content-section">
+            <div id="quiz-container"></div>
+            <button onclick="location.reload()" style="margin-top:20px; padding:10px;">Reset Quiz</button>
+        </div>
+    </div>
+    <script>
+        const quizData = [
+            {
+                question: "Sample Question?",
+                options: ["Option A", "Option B", "Option C", "Option D"],
+                correct: 0,
+                explanation: "Explanation goes here."
+            }
+        ];
+    </script>
+    <script src="../main.js"></script>
+</body>
+</html>
