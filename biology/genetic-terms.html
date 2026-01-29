@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Genetic Terms (Form 4)</title>
+  <meta name="tags" content="Form 3, KCSE, Biology, Genetics" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="../index.html">&larr; Back to Dashboard</a>
+      <h1 id="topic-title">Genetic Terms (Form 4)</h1>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Navigation Tabs -->
+    <div class="tabs">
+      <button class="tab-btn active" data-target="writing-notes">📝 Notes for Writing</button>
+      <button class="tab-btn" data-target="quick-revision">⚡ Quick Revision</button>
+      <button class="tab-btn" data-target="kcse-drill">🎯 KCSE Drill</button>
+      <button class="tab-btn" data-target="quiz-view">✍️ MCQ Quiz</button>
+    </div>
+
+    <!-- TOOLS (Quick Jump + Expand/Collapse) -->
+    <div class="concept-box" style="margin-top: 14px;">
+      <h3 style="margin-top:0;">Topic Tools</h3>
+      <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+        <label style="font-weight:800; color:#334155;">
+          Quick Jump:
+          <select id="quick-jump" style="margin-left:6px; padding:8px 10px; border-radius:8px; border:1px solid #e2e8f0;">
+            <option value="">Select a section…</option>
+          </select>
+        </label>
+        <button id="jump-btn" class="reveal-btn" type="button">Go</button>
+        <button id="expand-all" class="reveal-btn" type="button">Expand all</button>
+        <button id="collapse-all" class="reveal-btn" type="button">Collapse all</button>
+      </div>
+      <p style="margin:10px 0 0 0; color:#64748b; font-weight:700;">
+        Tip: Genetics becomes easy when you can <strong>define the terms cleanly</strong> and then <strong>use them in a Punnett square</strong>.
+        KCSE rewards clarity, not vibes.
+      </p>
+    </div>
+
+    <!-- TAB 1: NOTES FOR WRITING -->
+    <div id="writing-notes" class="content-section active">
+      <h2>GENETIC TERMS — WRITING NOTES (KCSE)</h2>
+
+      <details class="note-section" open>
+        <summary id="big-picture">1) Big picture: what you must be able to do</summary>
+        <p>
+          Genetics questions in KCSE mainly test whether you can:
+        </p>
+        <ul>
+          <li><strong>Define key terms</strong> accurately (gene, allele, genotype, phenotype, etc.).</li>
+          <li><strong>Use symbols correctly</strong> (T, t; X<sup>H</sup>, X<sup>h</sup>; I<sup>A</sup>, I<sup>B</sup>, i).</li>
+          <li><strong>Explain inheritance</strong> using Mendel’s ideas (dominance, segregation, independent assortment).</li>
+          <li><strong>Draw and interpret Punnett squares</strong> for monohybrid, dihybrid and sex-linked crosses.</li>
+        </ul>
+
+        <div class="concept-box">
+          <h4>KCSE exam language (use these exact phrases)</h4>
+          <ul>
+            <li><strong>Gene</strong> is a section of DNA that controls a characteristic.</li>
+            <li><strong>Alleles</strong> are alternative forms of the same gene found at the same locus.</li>
+            <li><strong>Genotype</strong> is the genetic makeup; <strong>phenotype</strong> is the observable expression.</li>
+            <li><strong>Meiosis</strong> produces <strong>haploid gametes</strong>, helping maintain chromosome number after fertilisation.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="structures">2) Genetic structures (the “hardware”)</summary>
+        <p>
+          These are the physical structures that carry hereditary information.
+        </p>
+
+        <div class="concept-box">
+          <h4>Key terms + KCSE definitions</h4>
+          <ul>
+            <li><strong>Nucleus:</strong> part of the cell containing chromosomes (genetic material).</li>
+            <li><strong>Chromosome:</strong> thread-like structures in the nucleus carrying genes.</li>
+            <li><strong>Chromatid:</strong> one of two identical halves of a replicated chromosome.</li>
+            <li><strong>Centromere:</strong> region joining sister chromatids.</li>
+            <li><strong>Gene:</strong> a length of DNA controlling a characteristic.</li>
+            <li><strong>Locus:</strong> position of a gene on a chromosome.</li>
+            <li><strong>DNA:</strong> hereditary material that makes up genes.</li>
+          </ul>
+        </div>
+
+        <div class="concept-box">
+          <h4>Simple diagram: chromosome, chromatids and centromere</h4>
+          <svg viewBox="0 0 560 230" width="100%" height="230" role="img" aria-label="Chromosome diagram showing sister chromatids and centromere"
+            style="border:1px solid #e2e8f0; border-radius:12px; background:#fff;">
+            <!-- left chromatid -->
+            <path d="M230,30 C200,60 205,95 230,110 C255,125 250,165 220,200"
+                  fill="none" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>
+            <!-- right chromatid -->
+            <path d="M330,30 C360,60 355,95 330,110 C305,125 310,165 340,200"
+                  fill="none" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>
+
+            <!-- centromere -->
+            <circle cx="280" cy="115" r="16" fill="rgba(59,130,246,0.25)" stroke="#0f172a" stroke-width="2"/>
+            <text x="305" y="122" font-size="13" fill="#0f172a" font-weight="800">Centromere</text>
+
+            <!-- labels -->
+            <text x="135" y="60" font-size="13" fill="#0f172a" font-weight="800">Sister chromatid</text>
+            <line x1="205" y1="62" x2="230" y2="70" stroke="#0f172a" stroke-width="2"/>
+
+            <text x="390" y="60" font-size="13" fill="#0f172a" font-weight="800">Sister chromatid</text>
+            <line x1="375" y1="62" x2="330" y2="70" stroke="#0f172a" stroke-width="2"/>
+
+            <text x="200" y="225" font-size="12" fill="#334155">
+              A replicated chromosome has <strong>two chromatids</strong> joined at a <strong>centromere</strong>.
+            </text>
+          </svg>
+        </div>
+
+        <div class="concept-box">
+          <h4>Small but deadly KCSE trap</h4>
+          <p style="margin:0;">
+            A <strong>chromosome</strong> carries many <strong>genes</strong>. A <strong>gene</strong> is a segment of <strong>DNA</strong>.
+            Don’t mix these like people mix “county” and “ward”.
+          </p>
+        </div>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="expression">3) Genetic information & expression (genotype → phenotype)</summary>
+        <p>
+          KCSE often tests whether you can separate the “code” from the “appearance”.
+        </p>
+
+        <div class="concept-box">
+          <h4>Core terms you must define cleanly</h4>
+          <ul>
+            <li><strong>Trait/character:</strong> a feature (e.g. height, blood group).</li>
+            <li><strong>Characteristic:</strong> a specific form of a trait (e.g. tall, short).</li>
+            <li><strong>Allele:</strong> alternative form of the same gene (e.g. T and t).</li>
+            <li><strong>Genotype:</strong> the genetic constitution (e.g. TT, Tt, tt).</li>
+            <li><strong>Phenotype:</strong> the observable appearance (e.g. tall or short).</li>
+            <li><strong>Homozygous:</strong> two identical alleles (TT or tt).</li>
+            <li><strong>Heterozygous:</strong> two different alleles (Tt).</li>
+          </ul>
+        </div>
+
+        <div class="concept-box">
+          <h4>Memory muscle (write these as your “anchor lines”)</h4>
+          <ul>
+            <li><strong>Genotype</strong> = what you <strong>have</strong> (letters).</li>
+            <li><strong>Phenotype</strong> = what you <strong>see</strong> (appearance).</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="dominance">4) Dominance relationships (exam gold)</summary>
+        <p>
+          Dominance describes how alleles interact to produce a phenotype.
+        </p>
+
+        <div class="concept-box">
+          <ul>
+            <li><strong>Dominant allele:</strong> expressed in both homozygous and heterozygous states.</li>
+            <li><strong>Recessive allele:</strong> expressed only when homozygous.</li>
+            <li><strong>Complete dominance:</strong> dominant allele masks recessive allele (classic Mendelian pattern).</li>
+            <li><strong>Incomplete dominance:</strong> heterozygote shows intermediate phenotype.</li>
+            <li><strong>Codominance:</strong> both alleles expressed equally in heterozygote.</li>
+            <li><strong>Multiple alleles:</strong> more than two alleles exist for a gene in a population (e.g. ABO blood group).</li>
+          </ul>
+        </div>
+
+        <details class="note-section">
+          <summary id="abbreviations">Common KCSE symbols you must handle</summary>
+          <div class="concept-box">
+            <ul>
+              <li><strong>ABO blood group:</strong> I<sup>A</sup>, I<sup>B</sup> (codominant), i (recessive).</li>
+              <li><strong>Sex-linked:</strong> X<sup>H</sup>X<sup>h</sup>, X<sup>h</sup>Y etc. (allele on X chromosome).</li>
+            </ul>
+            <p style="margin:10px 0 0 0; color:#64748b; font-weight:800;">
+              KCSE marking is strict on symbols. Write them neatly and consistently.
+            </p>
+          </div>
+        </details>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="cell-division">5) Cell division terms (mitosis vs meiosis)</summary>
+        <p>
+          Genetics is built on how cells divide and how gametes are formed.
+        </p>
+
+        <div class="concept-box">
+          <ul>
+            <li><strong>Mitosis:</strong> produces genetically identical diploid cells for growth and repair.</li>
+            <li><strong>Meiosis:</strong> produces haploid gametes and creates variation.</li>
+            <li><strong>Gamete:</strong> sex cell (sperm/ovum) (haploid).</li>
+            <li><strong>Diploid (2n):</strong> two sets of chromosomes (body cells).</li>
+            <li><strong>Haploid (n):</strong> one set of chromosomes (gametes).</li>
+            <li><strong>Homologous chromosomes:</strong> pair of chromosomes with genes at the same loci.</li>
+            <li><strong>Crossing over:</strong> exchange of genetic material between homologous chromosomes (meiosis I).</li>
+            <li><strong>Independent assortment:</strong> random distribution of chromosomes into gametes.</li>
+          </ul>
+        </div>
+
+        <div class="concept-box">
+          <h4>Quick diagram: where variation comes from</h4>
+          <svg viewBox="0 0 560 220" width="100%" height="220" role="img" aria-label="Variation in meiosis diagram: crossing over and independent assortment"
+            style="border:1px solid #e2e8f0; border-radius:12px; background:#fff;">
+            <!-- Title -->
+            <text x="20" y="28" font-size="14" fill="#0f172a" font-weight="900">Meiosis creates variation mainly through:</text>
+
+            <!-- crossing over -->
+            <rect x="20" y="50" width="250" height="150" rx="12" fill="rgba(59,130,246,0.10)" stroke="#0f172a"/>
+            <text x="35" y="75" font-size="13" fill="#0f172a" font-weight="900">A) Crossing over</text>
+
+            <!-- two homologous chromosomes -->
+            <line x1="90" y1="95" x2="90" y2="180" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>
+            <line x1="150" y1="95" x2="150" y2="180" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>
+
+            <!-- crossing segment -->
+            <line x1="90" y1="135" x2="150" y2="135" stroke="#ef4444" stroke-width="6" stroke-linecap="round"/>
+            <text x="40" y="205" font-size="12" fill="#334155">Exchange of segments between homologous chromosomes</text>
+
+            <!-- independent assortment -->
+            <rect x="290" y="50" width="250" height="150" rx="12" fill="rgba(34,197,94,0.10)" stroke="#0f172a"/>
+            <text x="305" y="75" font-size="13" fill="#0f172a" font-weight="900">B) Independent assortment</text>
+
+            <!-- metaphase alignment -->
+            <line x1="330" y1="95" x2="330" y2="180" stroke="#0f172a" stroke-width="8" stroke-linecap="round"/>
+            <line x1="390" y1="95" x2="390" y2="180" stroke="#0f172a" stroke-width="8" stroke-linecap="round"/>
+            <line x1="450" y1="95" x2="450" y2="180" stroke="#0f172a" stroke-width="8" stroke-linecap="round"/>
+
+            <!-- arrows -->
+            <polygon points="330,190 322,176 338,176" fill="#22c55e"/>
+            <polygon points="390,190 382,176 398,176" fill="#22c55e"/>
+            <polygon points="450,190 442,176 458,176" fill="#22c55e"/>
+
+            <text x="305" y="205" font-size="12" fill="#334155">Random distribution of chromosomes into gametes</text>
+          </svg>
+        </div>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="inheritance-terms">6) Inheritance patterns & problem-solving terms</summary>
+        <p>
+          These are the terms used in crosses and genetic calculations.
+        </p>
+
+        <div class="concept-box">
+          <ul>
+            <li><strong>Monohybrid inheritance:</strong> inheritance of one pair of contrasting characteristics.</li>
+            <li><strong>Dihybrid inheritance:</strong> inheritance of two pairs of contrasting characteristics.</li>
+            <li><strong>F<sub>1</sub> generation:</strong> first filial generation (offspring from parental cross).</li>
+            <li><strong>F<sub>2</sub> generation:</strong> offspring from crossing F<sub>1</sub> individuals.</li>
+            <li><strong>Punnett square:</strong> diagram used to predict genotypes and phenotypes of offspring.</li>
+            <li><strong>Test cross:</strong> crossing with a homozygous recessive to determine unknown genotype.</li>
+            <li><strong>Ratio:</strong> relationship between numbers (e.g. 3:1; 1:2:1).</li>
+            <li><strong>Probability:</strong> chance of an outcome (expressed as fraction or percentage).</li>
+          </ul>
+        </div>
+
+        <details class="note-section" open>
+          <summary id="punnett-demo">Punnett square (monohybrid) demo you can copy in exams</summary>
+          <p>
+            Example: Tall (T) is dominant over short (t). Cross Tt × Tt.
+          </p>
+
+          <div class="concept-box">
+            <svg viewBox="0 0 560 240" width="100%" height="240" role="img" aria-label="Punnett square for Tt x Tt"
+              style="border:1px solid #e2e8f0; border-radius:12px; background:#fff;">
+              <!-- grid -->
+              <rect x="140" y="40" width="280" height="160" fill="none" stroke="#0f172a" stroke-width="2"/>
+              <line x1="140" y1="80" x2="420" y2="80" stroke="#0f172a" stroke-width="2"/>
+              <line x1="140" y1="120" x2="420" y2="120" stroke="#0f172a" stroke-width="2"/>
+              <line x1="140" y1="160" x2="420" y2="160" stroke="#0f172a" stroke-width="2"/>
+              <line x1="200" y1="40" x2="200" y2="200" stroke="#0f172a" stroke-width="2"/>
+              <line x1="280" y1="40" x2="280" y2="200" stroke="#0f172a" stroke-width="2"/>
+              <line x1="350" y1="40" x2="350" y2="200" stroke="#0f172a" stroke-width="2"/>
+
+              <!-- headers -->
+              <text x="55" y="65" font-size="13" fill="#0f172a" font-weight="900">Gametes</text>
+              <text x="160" y="65" font-size="15" fill="#0f172a" font-weight="900">T</text>
+              <text x="240" y="65" font-size="15" fill="#0f172a" font-weight="900">t</text>
+
+              <text x="95" y="110" font-size="15" fill="#0f172a" font-weight="900">T</text>
+              <text x="95" y="150" font-size="15" fill="#0f172a" font-weight="900">t</text>
+
+              <!-- offspring -->
+              <text x="155" y="110" font-size="15" fill="#0f172a" font-weight="900">TT</text>
+              <text x="235" y="110" font-size="15" fill="#0f172a" font-weight="900">Tt</text>
+              <text x="155" y="150" font-size="15" fill="#0f172a" font-weight="900">Tt</text>
+              <text x="235" y="150" font-size="15" fill="#0f172a" font-weight="900">tt</text>
+
+              <text x="20" y="220" font-size="12" fill="#334155">
+                Genotype ratio: <strong>1 TT : 2 Tt : 1 tt</strong> | Phenotype ratio: <strong>3 tall : 1 short</strong>
+              </text>
+            </svg>
+          </div>
+
+          <div class="concept-box">
+            <h4>Marking-tip (how to avoid silly losses)</h4>
+            <ul>
+              <li>Write the <strong>gametes</strong> first (from each parent).</li>
+              <li>Fill the square systematically.</li>
+              <li>State both <strong>genotype ratio</strong> and <strong>phenotype ratio</strong>.</li>
+            </ul>
+          </div>
+        </details>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="sex-linked">7) Sex determination & sex-linked terms</summary>
+        <div class="concept-box">
+          <ul>
+            <li><strong>Autosome:</strong> any chromosome that is not a sex chromosome.</li>
+            <li><strong>Sex chromosome:</strong> X or Y chromosome.</li>
+            <li><strong>Sex-linked trait:</strong> trait controlled by a gene on the X chromosome.</li>
+            <li><strong>Carrier:</strong> individual who has the allele but does not show the trait (commonly heterozygous female).</li>
+          </ul>
+        </div>
+
+        <div class="concept-box">
+          <h4>KCSE truth (say it plainly)</h4>
+          <p style="margin:0;">
+            Many X-linked recessive traits appear more in <strong>males</strong> because males have <strong>only one X chromosome</strong>.
+          </p>
+        </div>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="variation-mutation">8) Variation & mutation terms</summary>
+        <div class="concept-box">
+          <ul>
+            <li><strong>Variation:</strong> differences among individuals of the same species.</li>
+            <li><strong>Continuous variation:</strong> no clear categories (e.g. height, mass).</li>
+            <li><strong>Discontinuous variation:</strong> distinct categories (e.g. blood group).</li>
+            <li><strong>Mutation:</strong> sudden change in genetic material.</li>
+            <li><strong>Gene mutation:</strong> change in DNA base sequence within a gene.</li>
+            <li><strong>Chromosomal mutation:</strong> change in chromosome structure or number.</li>
+          </ul>
+        </div>
+
+        <div class="concept-box" style="border-left-color:#10b981;">
+          <h4 style="margin-top:0;">Classroom reality (no fancy lab needed)</h4>
+          <ul>
+            <li>Use class data for <strong>continuous variation</strong> (e.g. heights): draw a simple frequency table.</li>
+            <li>Use <strong>blood groups</strong> or <strong>tongue rolling</strong> for discontinuous examples (where appropriate).</li>
+            <li>For mutation, focus on definition + effect (don’t overcomplicate).</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="study-plan">9) How to revise genetic terms without suffering</summary>
+        <div class="concept-box" style="border-left-color:#f59e0b;">
+          <h4 style="margin-top:0;">10-minute “memory muscle” routine</h4>
+          <ol>
+            <li>Write <strong>5 anchor definitions</strong>: gene, allele, genotype, phenotype, meiosis.</li>
+            <li>Do <strong>one monohybrid Punnett square</strong> neatly.</li>
+            <li>List <strong>3 sources of variation</strong>: crossing over, independent assortment, random fertilisation.</li>
+            <li>Answer <strong>one KCSE-style short question</strong> from the drill section.</li>
+          </ol>
+          <p style="margin:10px 0 0 0; color:#64748b; font-weight:800;">
+            Consistency beats “one big weekend”. Genetics is like maths: daily small reps.
+          </p>
+        </div>
+      </details>
+    </div>
+
+    <!-- TAB 2: QUICK REVISION -->
+    <div id="quick-revision" class="content-section">
+      <h2>GENETIC TERMS — QUICK REVISION</h2>
+
+      <div class="concept-box" style="border-left-color:#f59e0b;">
+        <h3 style="margin-top:0;">Must-know terms (fast list)</h3>
+        <ul>
+          <li><strong>Gene, DNA, chromosome, locus</strong></li>
+          <li><strong>Allele, dominant, recessive</strong></li>
+          <li><strong>Genotype, phenotype</strong></li>
+          <li><strong>Homozygous, heterozygous</strong></li>
+          <li><strong>Codominance, incomplete dominance, multiple alleles</strong></li>
+          <li><strong>Gamete, diploid (2n), haploid (n), homologous chromosomes</strong></li>
+          <li><strong>Crossing over, independent assortment</strong></li>
+          <li><strong>Punnett square, monohybrid, dihybrid, test cross</strong></li>
+          <li><strong>Autosome, sex chromosome, sex-linked, carrier</strong></li>
+          <li><strong>Variation (continuous/discontinuous), mutation</strong></li>
+        </ul>
+      </div>
+
+      <h3 id="qr-one-liners">1) One-line definitions (KCSE style)</h3>
+      <ul>
+        <li><strong>Gene:</strong> a section of DNA controlling a characteristic.</li>
+        <li><strong>Allele:</strong> an alternative form of the same gene at the same locus.</li>
+        <li><strong>Genotype:</strong> genetic constitution of an organism.</li>
+        <li><strong>Phenotype:</strong> observable characteristics of an organism.</li>
+        <li><strong>Meiosis:</strong> cell division producing haploid gametes and causing variation.</li>
+      </ul>
+
+      <h3 id="qr-traps">2) KCSE traps (avoid easy mark losses)</h3>
+      <ul>
+        <li>Don’t confuse <strong>gene</strong> with <strong>chromosome</strong>.</li>
+        <li>Don’t confuse <strong>genotype</strong> with <strong>phenotype</strong>.</li>
+        <li>Always state <strong>genotype ratio</strong> and <strong>phenotype ratio</strong> separately.</li>
+        <li>In sex-linked questions, remember: <strong>males are XY</strong> (one X only).</li>
+        <li>Write ABO symbols properly: I<sup>A</sup>, I<sup>B</sup>, i (not IA as plain letters).</li>
+      </ul>
+
+      <h3 id="qr-prompts">3) Memory prompts (short, sharp, exam-ready)</h3>
+      <ol>
+        <li>Differentiate between a gene and an allele.</li>
+        <li>Differentiate between genotype and phenotype (with an example).</li>
+        <li>Define homozygous and heterozygous (with examples).</li>
+        <li>Explain why meiosis leads to variation (give 2 reasons).</li>
+        <li>State what a test cross is used for.</li>
+        <li>State what codominance means using ABO blood group.</li>
+      </ol>
+    </div>
+
+    <!-- TAB 3: KCSE DRILL -->
+    <div id="kcse-drill" class="content-section">
+      <h2>KCSE DRILL (Try on paper first, then mark yourself)</h2>
+      <div id="kcse-container">
+        <p style="color:#64748b; font-weight:700;">
+          If this section appears blank, confirm your <code>main.js</code> includes the KCSE Drill loader.
+          (This page provides <code>kcseData</code>; the script renders it.)
+        </p>
+      </div>
+    </div>
+
+    <!-- TAB 4: MCQ QUIZ -->
+    <div id="quiz-view" class="content-section">
+      <h2>MCQ Quiz (Instant feedback)</h2>
+      <div id="quiz-container"></div>
+    </div>
+
+  </div>
+
+  <!-- Back to top -->
+  <button id="back-to-top" title="Back to top">↑</button>
+
+  <!-- =========================
+       DATA: KCSE Drill Questions
+       ========================= -->
+  <script>
+    // KCSE Drill data for spaced review / marking-points style
+    // Each item: { prompt, marks, points[] }
+    const kcseData = [
+      {
+        prompt: "Define each of the following: (i) gene (ii) allele (iii) locus.",
+        marks: 6,
+        points: [
+          "Gene: a section of DNA controlling a characteristic",
+          "Allele: alternative form of a gene",
+          "Locus: position of a gene on a chromosome",
+          "Definitions are clear and correct",
+          "Uses proper genetic wording (not vague)",
+          "No mixing up gene vs chromosome"
+        ]
+      },
+      {
+        prompt: "Differentiate between genotype and phenotype, giving an example in each case.",
+        marks: 6,
+        points: [
+          "Genotype: genetic constitution (letters) e.g. Tt",
+          "Phenotype: observable appearance e.g. tall",
+          "Clear distinction between 'have' and 'see'",
+          "Example matches the definition",
+          "No confusion between terms",
+          "Writes answer in two clear parts"
+        ]
+      },
+      {
+        prompt: "Explain the meaning of: (i) homozygous (ii) heterozygous, giving one example of each.",
+        marks: 6,
+        points: [
+          "Homozygous: identical alleles (TT or tt)",
+          "Heterozygous: different alleles (Tt)",
+          "Provides correct examples",
+          "Examples are properly written",
+          "Definitions are not reversed",
+          "Clear presentation"
+        ]
+      },
+      {
+        prompt: "A plant with genotype Tt is crossed with a plant with genotype Tt. Use a Punnett square to determine genotype ratio and phenotype ratio. (T = tall, t = short)",
+        marks: 8,
+        points: [
+          "States gametes for each parent: T and t",
+          "Correct Punnett square filled",
+          "Genotypes obtained: TT, Tt, Tt, tt",
+          "Genotype ratio stated: 1 TT : 2 Tt : 1 tt",
+          "Phenotype ratio stated: 3 tall : 1 short",
+          "Uses correct symbols",
+          "Ratios clearly labelled",
+          "Work is neat and systematic"
+        ]
+      },
+      {
+        prompt: "Define: (i) test cross (ii) monohybrid cross.",
+        marks: 5,
+        points: [
+          "Test cross: crossing an individual of unknown genotype with a homozygous recessive",
+          "States purpose: to determine unknown genotype",
+          "Monohybrid cross: involves one pair of contrasting characteristics",
+          "Uses correct terms",
+          "Clear, exam-style definitions"
+        ]
+      },
+      {
+        prompt: "State two ways in which meiosis leads to genetic variation.",
+        marks: 4,
+        points: [
+          "Crossing over between homologous chromosomes",
+          "Independent assortment of chromosomes into gametes",
+          "Any two correct points stated",
+          "Answer is concise and correct"
+        ]
+      },
+      {
+        prompt: "Explain what is meant by (i) codominance (ii) incomplete dominance. Give one example for each.",
+        marks: 8,
+        points: [
+          "Codominance: both alleles expressed equally in heterozygote",
+          "Example: ABO blood group (I^A and I^B producing AB)",
+          "Incomplete dominance: heterozygote has intermediate phenotype",
+          "Example: intermediate flower colour or similar KCSE example",
+          "Examples match definitions",
+          "Correct use of terms",
+          "Clear separation of (i) and (ii)",
+          "No mixing codominance with incomplete dominance"
+        ]
+      },
+      {
+        prompt: "Differentiate between autosomes and sex chromosomes.",
+        marks: 4,
+        points: [
+          "Autosomes: non-sex chromosomes",
+          "Sex chromosomes: determine sex (X and Y)",
+          "Clear distinction stated",
+          "Correct terminology used"
+        ]
+      },
+      {
+        prompt: "A sex-linked recessive condition is controlled by allele h on the X chromosome. Write the genotypes of: (i) affected male (ii) carrier female (iii) normal male.",
+        marks: 6,
+        points: [
+          "Affected male: X^hY",
+          "Carrier female: X^HX^h (or X^hX^H acceptable)",
+          "Normal male: X^HY",
+          "Correct use of superscripts and symbols",
+          "Each genotype correctly matched",
+          "Answer is clearly labelled"
+        ]
+      },
+      {
+        prompt: "Explain the difference between continuous and discontinuous variation, giving one example for each.",
+        marks: 6,
+        points: [
+          "Continuous variation: range with no clear categories",
+          "Example: height or mass",
+          "Discontinuous variation: distinct categories",
+          "Example: blood group",
+          "Examples match definitions",
+          "Clear two-part answer"
+        ]
+      }
+    ];
+  </script>
+
+  <!-- =========================
+       DATA: MCQ Quiz Questions
+       ========================= -->
+  <script>
+    // quizData format:
+    // { question: "", options: [], correct: <index>, explanation: "" }
+    const quizData = [
+      {
+        question: "A gene is best described as:",
+        options: [
+          "A thread-like structure found in the cytoplasm",
+          "A section of DNA that controls a characteristic",
+          "A whole chromosome found in the nucleus",
+          "Any protein found in the cell membrane"
+        ],
+        correct: 1,
+        explanation: "KCSE definition: a gene is a section of DNA that controls a characteristic."
+      },
+      {
+        question: "Alternative forms of the same gene are called:",
+        options: ["Chromatids", "Alleles", "Centromeres", "Gametes"],
+        correct: 1,
+        explanation: "Alleles are alternative forms of the same gene found at the same locus."
+      },
+      {
+        question: "The position of a gene on a chromosome is called:",
+        options: ["Locus", "Genome", "Nucleus", "Trait"],
+        correct: 0,
+        explanation: "A locus is the position of a gene on a chromosome."
+      },
+      {
+        question: "Genotype refers to:",
+        options: [
+          "The observable appearance of an organism",
+          "The genetic constitution of an organism",
+          "The environment affecting an organism",
+          "The physical size of chromosomes"
+        ],
+        correct: 1,
+        explanation: "Genotype is the genetic makeup (e.g. TT, Tt, tt)."
+      },
+      {
+        question: "Phenotype refers to:",
+        options: [
+          "The observable characteristics of an organism",
+          "The genes found in the nucleus",
+          "The arrangement of chromosomes during meiosis",
+          "The number of alleles in a population"
+        ],
+        correct: 0,
+        explanation: "Phenotype is what you can observe (e.g. tall/short)."
+      },
+      {
+        question: "A heterozygous genotype for a trait controlled by alleles T and t is:",
+        options: ["TT", "tt", "Tt", "T or t"],
+        correct: 2,
+        explanation: "Heterozygous means two different alleles: Tt."
+      },
+      {
+        question: "Codominance is best shown in:",
+        options: ["AB blood group", "Shortness in peas", "Albinism", "Eye colour in humans"],
+        correct: 0,
+        explanation: "In ABO blood group, I^A and I^B are codominant and both are expressed in AB."
+      },
+      {
+        question: "Which of the following occurs in meiosis and increases variation?",
+        options: ["Binary fission", "Crossing over", "Photosynthesis", "Osmosis"],
+        correct: 1,
+        explanation: "Crossing over in meiosis I produces new allele combinations."
+      },
+      {
+        question: "A test cross is used to:",
+        options: [
+          "Determine sex of an organism",
+          "Determine the genotype of an individual with dominant phenotype",
+          "Increase mutation rate",
+          "Produce identical offspring"
+        ],
+        correct: 1,
+        explanation: "A test cross uses a homozygous recessive to reveal the unknown genotype."
+      },
+      {
+        question: "In X-linked recessive inheritance, males are more affected mainly because:",
+        options: [
+          "Males have two X chromosomes",
+          "Males have only one X chromosome",
+          "Males have no sex chromosomes",
+          "The Y chromosome carries more genes than X"
+        ],
+        correct: 1,
+        explanation: "Males are XY; a recessive allele on the single X is expressed because there is no second X to mask it."
+      }
+    ];
+  </script>
+
+  <!-- Main script -->
+  <script src="../main.js" defer></script>
+</body>
+</html>

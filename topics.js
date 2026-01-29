@@ -71,7 +71,19 @@ window.KCSE_TOPICS = {
     }
   ],
   "chemistry": [],
-  "biology": [],
+  "biology": [
+    {
+      "title": "Genetic Terms (Form 4)",
+      "path": "biology/genetic-terms.html",
+      "tags": [
+        "Form 4",
+        "Biology",
+        "Form 3",
+        "KCSE",
+        "Genetics"
+      ]
+    }
+  ],
   "computer": [],
   "english": [],
   "kiswahili": []
