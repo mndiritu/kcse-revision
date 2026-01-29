@@ -28,10 +28,7 @@ window.KCSE_TOPICS = {
         "Work",
         "Energy",
         "Power",
-        "Machines",
-        "Efficiency",
-        "MA",
-        "VR"
+        "Machines"
       ]
     }
   ],
@@ -59,6 +56,17 @@ window.KCSE_TOPICS = {
         "direct rule",
         "assimilation",
         "association"
+      ]
+    },
+    {
+      "title": "WORLD WARS (FORM 3) | KCSE Revision Hub",
+      "path": "history/world-wars.html",
+      "tags": [
+        "Form 4",
+        "History",
+        "Form 3",
+        "KCSE",
+        "World wars"
       ]
     }
   ],
