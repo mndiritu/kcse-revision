@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Application Areas of Information and Communication Technology</title>
+  <meta name="tags" content="Form 4, KCSE, Computer Studies, Application Areas of ICT" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="../index.html">&larr; Back to Dashboard</a>
+      <h1 id="topic-title">Application Areas of Information and Communication Technology</h1>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Navigation Tabs -->
+    <div class="tabs">
+      <button class="tab-btn active" data-target="writing-notes">📝 Notes for Writing</button>
+      <button class="tab-btn" data-target="quick-revision">⚡ Quick Revision</button>
+      <button class="tab-btn" data-target="kcse-drill">🎯 KCSE Drill</button>
+      <button class="tab-btn" data-target="quiz-view">✍️ MCQ Quiz</button>
+    </div>
+
+    <!-- TOOLS (Quick Jump + Expand/Collapse) -->
+    <div class="concept-box" style="margin-top: 14px;">
+      <h3 style="margin-top:0;">Topic Tools</h3>
+      <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+        <label style="font-weight:800; color:#334155;">
+          Quick Jump:
+          <select id="quick-jump" style="margin-left:6px; padding:8px 10px; border-radius:8px; border:1px solid #e2e8f0;">
+            <option value="">Select a section…</option>
+          </select>
+        </label>
+        <button id="jump-btn" class="reveal-btn" type="button">Go</button>
+        <button id="expand-all" class="reveal-btn" type="button">Expand all</button>
+        <button id="collapse-all" class="reveal-btn" type="button">Collapse all</button>
+      </div>
+      <p style="margin:10px 0 0 0; color:#64748b; font-weight:700;">
+        KCSE trick: most questions here are <strong>lists + uses</strong>. Keep answers clean: <em>Application area → Uses (bullets)</em>. No novels, no tears.
+      </p>
+    </div>
+
+    <!-- TAB 1: NOTES FOR WRITING -->
+    <div id="writing-notes" class="content-section active">
+      <h2>APPLICATION AREAS OF ICT — WRITING NOTES (KCSE)</h2>
+
+      <details class="note-section" open>
+        <summary id="intro">1) Introduction</summary>
+        <p>
+          Computers are used in several areas and industries. Many manual jobs have been replaced by computers, making
+          processes <strong>faster</strong> and more <strong>efficient</strong>.
+        </p>
+
+        <div class="concept-box">
+          <h4 style="margin-top:0;">Application areas (from your notes)</h4>
+          <ul>
+            <li>Financial systems</li>
+            <li>Retail systems</li>
+            <li>Reservation systems</li>
+            <li>Education</li>
+            <li>Industrial systems</li>
+            <li>Scientific and research systems</li>
+            <li>Transportation systems</li>
+            <li>Entertainment systems</li>
+            <li>Virtual reality</li>
+            <li>Library system</li>
+            <li>Domestic systems</li>
+            <li>Health expert systems</li>
+            <li>Office expert systems</li>
+            <li>Marketing & Advertising</li>
+            <li>Security</li>
+          </ul>
+        </div>
+
+        <div class="concept-box">
+          <h4 style="margin-top:0;">Big picture diagram (for memory)</h4>
+          <svg viewBox="0 0 900 320" width="100%" height="320" role="img" aria-label="Diagram showing major application areas of ICT"
+               style="border:1px solid #e2e8f0; border-radius:12px; background:#fff;">
+            <defs>
+              <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0f172a" flood-opacity="0.12"/>
+              </filter>
+            </defs>
+
+            <circle cx="450" cy="160" r="66" fill="rgba(79,195,247,0.20)" stroke="#0f172a" stroke-width="2" filter="url(#shadow)"></circle>
+            <text x="450" y="165" text-anchor="middle" font-size="18" fill="#0f172a" font-weight="900">ICT</text>
+
+            <!-- spokes -->
+            <g stroke="#334155" stroke-width="2">
+              <line x1="450" y1="94" x2="450" y2="35"/>
+              <line x1="505" y1="120" x2="820" y2="70"/>
+              <line x1="515" y1="165" x2="840" y2="165"/>
+              <line x1="505" y1="205" x2="820" y2="255"/>
+              <line x1="450" y1="226" x2="450" y2="290"/>
+              <line x1="395" y1="205" x2="80" y2="255"/>
+              <line x1="385" y1="165" x2="60" y2="165"/>
+              <line x1="395" y1="120" x2="80" y2="70"/>
+            </g>
+
+            <!-- nodes -->
+            <g filter="url(#shadow)">
+              <rect x="360" y="10" width="180" height="50" rx="12" fill="rgba(34,197,94,0.14)" stroke="#0f172a"></rect>
+              <text x="450" y="40" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="800">Financial</text>
+
+              <rect x="720" y="45" width="160" height="50" rx="12" fill="rgba(99,102,241,0.12)" stroke="#0f172a"></rect>
+              <text x="800" y="75" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="800">Retail</text>
+
+              <rect x="720" y="140" width="160" height="50" rx="12" fill="rgba(245,158,11,0.15)" stroke="#0f172a"></rect>
+              <text x="800" y="170" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="800">Education</text>
+
+              <rect x="720" y="235" width="160" height="50" rx="12" fill="rgba(244,63,94,0.12)" stroke="#0f172a"></rect>
+              <text x="800" y="265" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="800">Industry</text>
+
+              <rect x="360" y="270" width="180" height="40" rx="12" fill="rgba(14,165,233,0.12)" stroke="#0f172a"></rect>
+              <text x="450" y="296" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="800">Transport</text>
+
+              <rect x="20" y="235" width="190" height="50" rx="12" fill="rgba(168,85,247,0.10)" stroke="#0f172a"></rect>
+              <text x="115" y="265" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="800">Security</text>
+
+              <rect x="20" y="140" width="190" height="50" rx="12" fill="rgba(16,185,129,0.12)" stroke="#0f172a"></rect>
+              <text x="115" y="170" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="800">Library</text>
+
+              <rect x="20" y="45" width="190" height="50" rx="12" fill="rgba(59,130,246,0.12)" stroke="#0f172a"></rect>
+              <text x="115" y="75" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="800">Research</text>
+            </g>
+
+            <text x="450" y="315" text-anchor="middle" font-size="12" fill="#64748b" font-weight="700">
+              Diagram is a memory map (not an exhaustive list). Use your notes for full coverage.
+            </text>
+          </svg>
+        </div>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="financial-systems">2) Financial systems</summary>
+        <p>Financial systems include:</p>
+        <ul>
+          <li>Payroll systems</li>
+          <li>Accounting systems</li>
+          <li>ICT in banks and insurance companies</li>
+        </ul>
+
+        <details class="note-section" open>
+          <summary id="payroll-systems">A) Payroll systems — uses</summary>
+          <ul>
+            <li>Human Resource Management</li>
+            <li>Salary processing</li>
+          </ul>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="accounting-systems">B) Accounting systems — uses</summary>
+          <ul>
+            <li>Customer orders entry</li>
+            <li>Billing</li>
+            <li>Inventory management</li>
+          </ul>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="banks-insurance">C) ICT in banks and insurance companies — uses</summary>
+          <ul>
+            <li>Automated Teller Machines (ATMs)</li>
+            <li>Cheques processing</li>
+            <li>Electronic Funds Transfer</li>
+            <li>Internet banking and mobile banking</li>
+            <li>Asset finance management such as loan processing systems</li>
+          </ul>
+        </details>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="retail-systems">3) Retail systems (e.g., supermarkets)</summary>
+        <p><strong>ICT in supermarkets — uses</strong></p>
+        <ul>
+          <li>Stock control</li>
+          <li>
+            Electronic Point of Sale (EPOS) — barcode reader, Electronic Funds Transfer,
+            acknowledging and appending transactions
+          </li>
+          <li>Security such as CCTV cameras and sensors item tags</li>
+          <li>Advertisements and promotions</li>
+        </ul>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="reservation-systems">4) Reservation systems — uses</summary>
+        <ul>
+          <li>Hotel booking</li>
+          <li>Airline booking</li>
+        </ul>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="education">5) Education — uses</summary>
+        <ul>
+          <li>Computer Aided Learning (CAL)</li>
+          <li>Computer Aided Teaching (CAT)</li>
+          <li>E-learning</li>
+          <li>Computer-based simulation</li>
+          <li>Virtual learning</li>
+          <li>Record management</li>
+          <li>Exams preparation and processing</li>
+        </ul>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="industrial-systems">6) Industrial systems — uses</summary>
+        <ul>
+          <li>Computer Aided Design (CAD)</li>
+          <li>Computer Aided Manufacture (CAM)</li>
+          <li>Simulation such as flight simulators</li>
+          <li>Process control using robots</li>
+          <li>Management control (tracking orders, bills and transactions)</li>
+          <li>Competitive tools such as designing new products and services</li>
+        </ul>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="scientific-research">7) Scientific and research systems — uses</summary>
+        <ul>
+          <li><strong>Hospitals:</strong> control lifesaving machines, diagnosis, intensive care units, health expert systems</li>
+          <li><strong>Weather forecasting:</strong> analyse climatic patterns and trends</li>
+          <li><strong>Military:</strong> weapons testing, radar systems, launching and guiding missiles, surveillance and tracking target enemies</li>
+          <li><strong>Space exploration:</strong> launch space automobiles and monitor flights</li>
+          <li><strong>Nuclear science:</strong> design and testing of nuclear weapons</li>
+        </ul>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="transportation">8) Transportation systems — uses</summary>
+        <ul>
+          <li>Automobile traffic control systems</li>
+          <li>Railway corporations coordinate movement of goods and wagons</li>
+          <li>Shipping control for communication and fleet management efficiently</li>
+          <li>Airline industry controls movement of aircraft, take-off and landing using radar equipment</li>
+        </ul>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="entertainment">9) Entertainment systems — uses</summary>
+        <ul>
+          <li>Business presentations for advertisement purposes</li>
+          <li>Internet, radio and television</li>
+          <li>Music-related equipment such as synthesisers</li>
+          <li>Production of movies and computer games</li>
+        </ul>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="virtual-reality">10) Virtual reality (VR)</summary>
+        <details class="note-section" open>
+          <summary id="vr-uses">A) Uses of virtual reality</summary>
+          <ul>
+            <li>Entertainment</li>
+            <li>Training military personnel</li>
+            <li>Education</li>
+            <li>Flight simulation</li>
+          </ul>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="vr-components">B) Components of Virtual Reality (VR)</summary>
+          <ul>
+            <li><strong>Gloves:</strong> special gloves fitted with sensors that track hand and finger movements</li>
+            <li><strong>Sensors:</strong> detect motion, position and orientation of the user’s body for real-time interaction</li>
+            <li><strong>Body suit:</strong> wearable suit with sensors to track full-body movements</li>
+            <li><strong>Head-Mounted Display (HMD) headgear:</strong> headset that displays the virtual environment in 3D and tracks head movement</li>
+            <li><strong>Virtual reality software:</strong> creates and manages the virtual environment (graphics, sound, interaction)</li>
+          </ul>
+
+          <div class="concept-box">
+            <h4 style="margin-top:0;">VR components diagram</h4>
+            <svg viewBox="0 0 920 260" width="100%" height="260" role="img" aria-label="Diagram showing virtual reality components"
+                 style="border:1px solid #e2e8f0; border-radius:12px; background:#fff;">
+              <defs>
+                <marker id="arrowVR" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+                  <polygon points="0,0 10,5 0,10" fill="#0f172a"></polygon>
+                </marker>
+              </defs>
+
+              <!-- Center -->
+              <rect x="380" y="90" width="160" height="80" rx="14" fill="rgba(79,195,247,0.18)" stroke="#0f172a" stroke-width="2"></rect>
+              <text x="460" y="128" text-anchor="middle" font-size="16" fill="#0f172a" font-weight="900">VR System</text>
+              <text x="460" y="150" text-anchor="middle" font-size="12" fill="#334155" font-weight="700">(Immersive)</text>
+
+              <!-- Left nodes -->
+              <rect x="40" y="30" width="210" height="50" rx="12" fill="rgba(34,197,94,0.14)" stroke="#0f172a"></rect>
+              <text x="145" y="62" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="800">Gloves</text>
+
+              <rect x="40" y="105" width="210" height="50" rx="12" fill="rgba(99,102,241,0.12)" stroke="#0f172a"></rect>
+              <text x="145" y="137" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="800">Sensors</text>
+
+              <rect x="40" y="180" width="210" height="50" rx="12" fill="rgba(245,158,11,0.15)" stroke="#0f172a"></rect>
+              <text x="145" y="212" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="800">Body Suit</text>
+
+              <!-- Right nodes -->
+              <rect x="670" y="55" width="220" height="60" rx="12" fill="rgba(244,63,94,0.12)" stroke="#0f172a"></rect>
+              <text x="780" y="85" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="800">HMD Headgear</text>
+              <text x="780" y="104" text-anchor="middle" font-size="12" fill="#334155" font-weight="700">(3D + head tracking)</text>
+
+              <rect x="670" y="145" width="220" height="60" rx="12" fill="rgba(168,85,247,0.10)" stroke="#0f172a"></rect>
+              <text x="780" y="175" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="800">VR Software</text>
+              <text x="780" y="194" text-anchor="middle" font-size="12" fill="#334155" font-weight="700">(graphics, sound, control)</text>
+
+              <!-- arrows -->
+              <line x1="250" y1="55" x2="380" y2="115" stroke="#0f172a" stroke-width="2.5" marker-end="url(#arrowVR)"/>
+              <line x1="250" y1="130" x2="380" y2="130" stroke="#0f172a" stroke-width="2.5" marker-end="url(#arrowVR)"/>
+              <line x1="250" y1="205" x2="380" y2="145" stroke="#0f172a" stroke-width="2.5" marker-end="url(#arrowVR)"/>
+
+              <line x1="540" y1="115" x2="670" y2="85" stroke="#0f172a" stroke-width="2.5" marker-end="url(#arrowVR)"/>
+              <line x1="540" y1="145" x2="670" y2="175" stroke="#0f172a" stroke-width="2.5" marker-end="url(#arrowVR)"/>
+            </svg>
+          </div>
+        </details>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="library-system">11) Library system — uses</summary>
+        <ul>
+          <li><strong>Cataloguing system:</strong> locate books and other resources easily</li>
+          <li><strong>Inventory control system:</strong> determine books to order or those lost</li>
+          <li><strong>Borrowing and lending system:</strong> easier borrowing and returning of materials</li>
+          <li><strong>E-libraries:</strong> virtual libraries on the internet offering electronic books and materials</li>
+          <li><strong>Research:</strong> using research sites such as Google</li>
+          <li><strong>Security:</strong> control theft of books and other library properties</li>
+        </ul>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="domestic-systems">12) Domestic systems — uses</summary>
+        <ul>
+          <li>Watching movies, playing music and computer games</li>
+          <li>Storing personal information</li>
+          <li>Calculating and storing home budgets</li>
+          <li>Shopping purposes: lists of shopping items and prices; electronic money transfer facilities</li>
+          <li>Internet, radio, televisions, music, games</li>
+          <li>Production of movies and computer games</li>
+        </ul>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="health-expert-systems">13) Health expert systems — uses</summary>
+        <ul>
+          <li>Allows experts with no experience of computers to build and evaluate complex disease models</li>
+          <li>Used to disseminate key findings on research on medical treatment outcomes</li>
+        </ul>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="office-expert-systems">14) Office expert systems — uses</summary>
+        <ul>
+          <li>Assist in decision making process</li>
+          <li>Support planning and scheduling of activities in offices</li>
+          <li>Solve complex problems by reasoning through bodies of knowledge</li>
+        </ul>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="marketing-advertising">15) Marketing & Advertising</summary>
+        <details class="note-section" open>
+          <summary id="ecommerce">A) Electronic commerce (E-business)</summary>
+          <p>
+            Transactions are carried out electronically without physical interaction between the seller and the buyer.
+            This saves on travel costs, time and other resources.
+          </p>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="electronic-presentation">B) Electronic presentation</summary>
+          <ul>
+            <li>Computers are used to create exciting presentations of products using presentation software</li>
+            <li>Computers are used to design catchy presentations using animation software that can be broadcasted, placed on billboards, or on the internet</li>
+            <li><strong>Note:</strong> the employee in charge of this work in an organisation is called a <strong>webmaster</strong></li>
+          </ul>
+        </details>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="security">16) Security (law enforcement agencies) — uses</summary>
+        <ul>
+          <li><strong>Biometrics:</strong> fingerprints, iris, facial, DNA, and general database of outlaws</li>
+          <li>Lie detectors in criminology</li>
+          <li>Forensic analysis</li>
+          <li>Speed up investigations</li>
+        </ul>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="classroom-reality">17) Classroom reality (ordinary resource setting)</summary>
+        <div class="concept-box" style="border-left-color:#10b981;">
+          <h4 style="margin-top:0;">How to revise without fancy gadgets</h4>
+          <ul>
+            <li>For each application area, memorize <strong>3–5 uses</strong> (that’s enough to score).</li>
+            <li>Use local examples: supermarket EPOS, mobile banking, school e-learning, traffic control, CCTV.</li>
+            <li>VR question? Don’t panic. Just list <strong>uses</strong> and <strong>components</strong> (gloves, sensors, suit, HMD, software).</li>
+            <li>Marketing question? Remember: <strong>E-business</strong> and <strong>electronic presentation</strong> + “webmaster”.</li>
+          </ul>
+          <p style="margin:10px 0 0 0; color:#64748b; font-weight:800;">
+            The examiner isn’t looking for “creative writing”. They’re looking for you to match the marking scheme.
+          </p>
+        </div>
+      </details>
+    </div>
+
+    <!-- TAB 2: QUICK REVISION -->
+    <div id="quick-revision" class="content-section">
+      <h2>APPLICATION AREAS OF ICT — QUICK REVISION</h2>
+
+      <div class="concept-box" style="border-left-color:#f59e0b;">
+        <h3 style="margin-top:0;">Must-master list (KCSE)</h3>
+        <ul>
+          <li>List the application areas (financial, retail, reservation, education, industrial, research, transport, entertainment, VR, library, domestic, expert systems, marketing, security).</li>
+          <li>Know “uses” for each area (3–6 points each).</li>
+          <li>VR: uses + components.</li>
+          <li>Marketing: e-business + electronic presentation + webmaster.</li>
+          <li>Security: biometrics + forensics + investigations.</li>
+        </ul>
+      </div>
+
+      <h3 id="qr-one-liners">1) One-line definitions (safe KCSE wording)</h3>
+      <ul>
+        <li><strong>Application area of ICT:</strong> a field/sector where computers and communication technologies are used to perform tasks and improve efficiency.</li>
+        <li><strong>EPOS:</strong> electronic point of sale system used in supermarkets (barcode reader + electronic funds transfer + transactions).</li>
+        <li><strong>E-business:</strong> transactions carried out electronically without physical interaction between buyer and seller.</li>
+        <li><strong>Virtual reality:</strong> computer-based environment that provides an immersive experience (supported by VR components).</li>
+        <li><strong>Biometrics:</strong> identification using body characteristics such as fingerprints, iris, facial features or DNA.</li>
+      </ul>
+
+      <h3 id="qr-memory-prompts">2) Memory prompts (quick practice)</h3>
+      <ol>
+        <li>State five application areas of ICT.</li>
+        <li>Differentiate payroll systems and accounting systems by giving two uses each.</li>
+        <li>Give five uses of ICT in banks and insurance companies.</li>
+        <li>List four uses of ICT in supermarkets.</li>
+        <li>List five uses of ICT in education.</li>
+        <li>List five uses of ICT in industrial systems.</li>
+        <li>Give four uses of ICT in transportation systems.</li>
+        <li>State four uses of ICT in entertainment systems.</li>
+        <li>State four uses and five components of Virtual Reality.</li>
+        <li>List four ways ICT is used in security (law enforcement agencies).</li>
+      </ol>
+
+      <h3 id="qr-exam-traps">3) Exam traps (avoid these)</h3>
+      <ul>
+        <li>Don’t write “ICT is used everywhere” and stop. KCSE wants <strong>area + specific uses</strong>.</li>
+        <li>For education, don’t just say “teaching”. Use the terms: <strong>CAL, CAT, e-learning, simulation, record management</strong>.</li>
+        <li>For retail, include EPOS details (barcode + EFT + transactions) to look serious.</li>
+        <li>For marketing, don’t forget the term <strong>webmaster</strong> (easy mark).</li>
+      </ul>
+    </div>
+
+    <!-- TAB 3: KCSE DRILL -->
+    <div id="kcse-drill" class="content-section">
+      <h2>KCSE DRILL (Try on paper first, then mark yourself)</h2>
+      <div id="kcse-container">
+        <p style="color:#64748b; font-weight:700;">
+          If this section appears blank, confirm your <code>main.js</code> includes the KCSE Drill loader.
+          (This page provides <code>kcseData</code>; the script renders it.)
+        </p>
+      </div>
+    </div>
+
+    <!-- TAB 4: MCQ QUIZ -->
+    <div id="quiz-view" class="content-section">
+      <h2>MCQ Quiz (Instant feedback)</h2>
+      <div id="quiz-container"></div>
+    </div>
+
+  </div>
+
+  <!-- Back to top -->
+  <button id="back-to-top" title="Back to top">↑</button>
+
+  <!-- =========================
+       DATA: KCSE Drill Questions
+       ========================= -->
+  <script>
+    // KCSE Drill data: { prompt, marks, points[] }
+    const kcseData = [
+      {
+        prompt: "Explain why computers are widely used in different industries (give TWO points).",
+        marks: 4,
+        points: [
+          "Many manual jobs have been replaced by computers",
+          "Processes become faster and efficient"
+        ]
+      },
+      {
+        prompt: "List TEN application areas of ICT.",
+        marks: 10,
+        points: [
+          "Any ten from: financial systems, retail systems, reservation systems, education, industrial systems, scientific and research systems, transportation systems, entertainment systems, virtual reality, library system, domestic systems, health expert systems, office expert systems, marketing & advertising, security"
+        ]
+      },
+      {
+        prompt: "State TWO uses of payroll systems.",
+        marks: 2,
+        points: [
+          "Human Resource Management",
+          "Salary processing"
+        ]
+      },
+      {
+        prompt: "State THREE uses of accounting systems.",
+        marks: 3,
+        points: [
+          "Customer orders entry",
+          "Billing",
+          "Inventory management"
+        ]
+      },
+      {
+        prompt: "Give FIVE uses of ICT in banks and insurance companies.",
+        marks: 5,
+        points: [
+          "Automated Teller Machines (ATMs)",
+          "Cheques processing",
+          "Electronic Funds Transfer",
+          "Internet banking and mobile banking",
+          "Asset finance management such as loan processing systems"
+        ]
+      },
+      {
+        prompt: "State FOUR uses of ICT in supermarkets (retail systems).",
+        marks: 4,
+        points: [
+          "Stock control",
+          "Electronic Point of Sale (EPOS) including barcode reader/EFT/transactions",
+          "Security such as CCTV cameras and sensors item tags",
+          "Advertisements and promotions"
+        ]
+      },
+      {
+        prompt: "State SIX uses of ICT in education.",
+        marks: 6,
+        points: [
+          "Computer Aided Learning (CAL)",
+          "Computer Aided Teaching (CAT)",
+          "E-learning",
+          "Computer-based simulation",
+          "Virtual learning",
+          "Record management",
+          "Exams preparation and processing (any six)"
+        ]
+      },
+      {
+        prompt: "List FIVE uses of ICT in industrial systems.",
+        marks: 5,
+        points: [
+          "Computer Aided Design (CAD)",
+          "Computer Aided Manufacture (CAM)",
+          "Simulation such as flight simulators",
+          "Process control using robots",
+          "Management control (tracking orders, bills and transactions)",
+          "Competitive tools such as designing new products and services (any five)"
+        ]
+      },
+      {
+        prompt: "State FOUR application uses of ICT in scientific and research systems.",
+        marks: 8,
+        points: [
+          "Hospitals: control lifesaving machines, diagnosis, ICUs, health expert systems",
+          "Weather forecasting: analyse climatic patterns and trends",
+          "Military: weapons testing/radar/missiles/surveillance and tracking targets",
+          "Space exploration: launch space automobiles and monitor flights",
+          "Nuclear science: design and testing of nuclear weapons (any four, with brief explanation)"
+        ]
+      },
+      {
+        prompt: "Virtual reality (VR): (a) Give FOUR uses (b) List FIVE components.",
+        marks: 9,
+        points: [
+          "Uses: entertainment; training military personnel; education; flight simulation (any four)",
+          "Components: gloves; sensors; body suit; head-mounted display (HMD) headgear; virtual reality software"
+        ]
+      },
+      {
+        prompt: "Marketing & Advertising: (a) Define e-business (b) State TWO ways computers support electronic presentation (c) Name the employee responsible for this work in an organisation.",
+        marks: 8,
+        points: [
+          "Defines e-business as transactions carried out electronically without physical interaction between seller and buyer; saves travel costs/time/resources",
+          "Electronic presentation: create exciting presentations using presentation software",
+          "Design catchy presentations using animation software for broadcast/billboards/internet",
+          "Employee is called a webmaster"
+        ]
+      },
+      {
+        prompt: "Security (law enforcement agencies): State FOUR uses of ICT.",
+        marks: 4,
+        points: [
+          "Biometrics (fingerprints, iris, facial, DNA) and database of outlaws",
+          "Lie detectors in criminology",
+          "Forensic analysis",
+          "Speed-up investigations"
+        ]
+      }
+    ];
+  </script>
+
+  <!-- =========================
+       DATA: MCQ Quiz Questions
+       ========================= -->
+  <script>
+    // quizData format: { question, options, correct, explanation }
+    const quizData = [
+      {
+        question: "The main reason computers are used in many industries is that they make processes:",
+        options: ["Slower and more expensive", "Faster and efficient", "More confusing", "Less accurate"],
+        correct: 1,
+        explanation: "The notes state that replacing manual jobs with computers makes processes faster and efficient."
+      },
+      {
+        question: "Which of the following is a use of payroll systems?",
+        options: ["Weather forecasting", "Salary processing", "Airline booking", "Cataloguing books"],
+        correct: 1,
+        explanation: "Payroll systems are used for HR management and salary processing."
+      },
+      {
+        question: "Which of the following is NOT listed as a use of accounting systems?",
+        options: ["Billing", "Customer orders entry", "Inventory management", "Hotel booking"],
+        correct: 3,
+        explanation: "Hotel booking is under reservation systems, not accounting systems."
+      },
+      {
+        question: "ICT in banks and insurance companies includes all EXCEPT:",
+        options: ["ATMs", "Cheques processing", "Electronic Funds Transfer", "Flight simulators"],
+        correct: 3,
+        explanation: "Flight simulators are listed under industrial systems (simulation)."
+      },
+      {
+        question: "EPOS in supermarkets is mainly associated with:",
+        options: ["Space exploration", "Barcode reader and electronic funds transfer", "DNA testing", "Virtual learning"],
+        correct: 1,
+        explanation: "EPOS includes barcode reader, EFT, and handling transactions."
+      },
+      {
+        question: "Hotel and airline booking fall under:",
+        options: ["Reservation systems", "Domestic systems", "Security systems", "Library systems"],
+        correct: 0,
+        explanation: "Reservation systems are used for hotel booking and airline booking."
+      },
+      {
+        question: "CAL and CAT are application uses of ICT in:",
+        options: ["Education", "Retail", "Transportation", "Security"],
+        correct: 0,
+        explanation: "Education uses include CAL and CAT."
+      },
+      {
+        question: "CAD and CAM are mainly used in:",
+        options: ["Industrial systems", "Entertainment systems", "Reservation systems", "Library systems"],
+        correct: 0,
+        explanation: "Industrial systems include CAD and CAM."
+      },
+      {
+        question: "Which of the following is a component of Virtual Reality (VR)?",
+        options: ["Cheques processing", "Head-Mounted Display (HMD) headgear", "Cataloguing system", "ATMs"],
+        correct: 1,
+        explanation: "VR components include HMD headgear, gloves, sensors, body suit, and VR software."
+      },
+      {
+        question: "In marketing & advertising, the employee in charge of designing presentations for broadcast/billboards/internet is called a:",
+        options: ["Database administrator", "Webmaster", "System analyst", "Network operator"],
+        correct: 1,
+        explanation: "Your notes state this employee is called a webmaster."
+      }
+    ];
+  </script>
+
+  <!-- Main script -->
+  <script src="../main.js" defer></script>
+</body>
+</html>

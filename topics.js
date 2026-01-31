@@ -84,7 +84,30 @@ window.KCSE_TOPICS = {
       ]
     }
   ],
-  "computer": [],
+  "computer": [
+    {
+      "title": "Application Areas of Information and Communication Technology",
+      "path": "computer/application-of-ict.html",
+      "tags": [
+        "Form 4",
+        "Computer",
+        "KCSE",
+        "Computer Studies",
+        "Application Areas of ICT"
+      ]
+    },
+    {
+      "title": "Impact of ICT on Society",
+      "path": "computer/impact-of-ict-on-society.html",
+      "tags": [
+        "Form 4",
+        "Computer",
+        "KCSE",
+        "Computer Studies",
+        "Impact of ICT"
+      ]
+    }
+  ],
   "english": [],
   "kiswahili": []
 };
