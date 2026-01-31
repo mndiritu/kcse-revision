@@ -1,0 +1,24 @@
+You are helping me add a new topic to my KCSE Revision Hub (GitHub Pages).
+
+SUBJECT FOLDER: Computer Studies
+TOPIC FILENAME work-wars.html
+PAGE TITLE: Impact of ICT on Society
+TAGS (comma-separated): Form 4, KCSE, Computer Studies, Impact of ICT
+
+STUDENT LEVEL: Form 4 KCSE
+TEACHER VOICE: normal KCSE 
+SCOPE: Include [....] and exclude [....]
+CLASSROOM REALITY: ordinary resource setting for Kenya
+
+CONTENT SOURCE (paste or attach): Attached PDF. Also attached is an implementation of a similar topic for you to adapt the formats and style. If possible add display of diagrams where possible
+
+OUTPUT REQUIREMENTS:
+- Return ONE complete HTML file content matching our site style and tabs.
+- Tabs required: Notes for Writing, Quick Revision, KCSE Drill, MCQ Quiz.
+- Include kcseData (8–12 KCSE questions with marking points + marks).
+- Include quizData (10 MCQs with explanations).
+- Use headings with ids and/or <details><summary id=...> so quick-jump works.
+- Use <title> and <meta name="tags"...> so dashboard shows a good title.
+- Keep it KCSE accurate; do not invent facts not supported by my notes.
+- The notes for writing should be adequate to help develop the memory muscle but not grind down the student.
+

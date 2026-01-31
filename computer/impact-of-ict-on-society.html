@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impact of ICT on Society</title>
+  <meta name="tags" content="Form 4, KCSE, Computer Studies, Impact of ICT" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="../index.html">&larr; Back to Dashboard</a>
+      <h1 id="topic-title">Impact of ICT on Society</h1>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Navigation Tabs -->
+    <div class="tabs">
+      <button class="tab-btn active" data-target="writing-notes">📝 Notes for Writing</button>
+      <button class="tab-btn" data-target="quick-revision">⚡ Quick Revision</button>
+      <button class="tab-btn" data-target="kcse-drill">🎯 KCSE Drill</button>
+      <button class="tab-btn" data-target="quiz-view">✍️ MCQ Quiz</button>
+    </div>
+
+    <!-- TOOLS (Quick Jump + Expand/Collapse) -->
+    <div class="concept-box" style="margin-top: 14px;">
+      <h3 style="margin-top:0;">Topic Tools</h3>
+      <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+        <label style="font-weight:800; color:#334155;">
+          Quick Jump:
+          <select id="quick-jump" style="margin-left:6px; padding:8px 10px; border-radius:8px; border:1px solid #e2e8f0;">
+            <option value="">Select a section…</option>
+          </select>
+        </label>
+        <button id="jump-btn" class="reveal-btn" type="button">Go</button>
+        <button id="expand-all" class="reveal-btn" type="button">Expand all</button>
+        <button id="collapse-all" class="reveal-btn" type="button">Collapse all</button>
+      </div>
+      <p style="margin:10px 0 0 0; color:#64748b; font-weight:700;">
+        Tip: KCSE marks love <strong>clear definitions</strong> + <strong>lists with short explanations</strong>. If you can define, list, and give one example, you’re already ahead.
+      </p>
+    </div>
+
+    <!-- TAB 1: NOTES FOR WRITING -->
+    <div id="writing-notes" class="content-section active">
+      <h2>IMPACT OF ICT ON SOCIETY — WRITING NOTES (KCSE)</h2>
+
+      <details class="note-section" open>
+        <summary id="overview">1) Big picture: what ICT changes in society</summary>
+        <p>
+          <strong>Impact</strong> means an effect — it can be <strong>positive</strong> or <strong>negative</strong>.
+          ICT affects society mainly through:
+        </p>
+        <ul>
+          <li><strong>Employment</strong> (jobs created, replaced, displaced)</li>
+          <li><strong>Automated production</strong> (machines/robots controlled by computers)</li>
+          <li><strong>Workers’ health</strong> (RSI, eye strain, stress, isolation, etc.)</li>
+          <li><strong>Environment</strong> (power use, heat, radiation concerns, e-waste, toxins)</li>
+          <li><strong>Culture & morals</strong> (privacy, integrity, communication habits; crimes)</li>
+          <li><strong>Breakthroughs & future trends</strong> (AI + information superhighway)</li>
+        </ul>
+
+        <div class="concept-box">
+          <h4 style="margin-top:0;">Fast “mental map” diagram</h4>
+          <svg viewBox="0 0 820 280" width="100%" height="280" role="img" aria-label="Diagram showing main ICT impact areas"
+               style="border:1px solid #e2e8f0; border-radius:12px; background:#fff;">
+            <defs>
+              <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0f172a" flood-opacity="0.12"/>
+              </filter>
+            </defs>
+
+            <circle cx="410" cy="140" r="62" fill="rgba(79,195,247,0.20)" stroke="#0f172a" stroke-width="2" filter="url(#shadow)"></circle>
+            <text x="410" y="145" text-anchor="middle" font-size="18" fill="#0f172a" font-weight="900">ICT</text>
+
+            <!-- spokes -->
+            <g stroke="#334155" stroke-width="2">
+              <line x1="410" y1="78" x2="410" y2="30"/>
+              <line x1="472" y1="110" x2="765" y2="55"/>
+              <line x1="472" y1="170" x2="770" y2="225"/>
+              <line x1="410" y1="202" x2="410" y2="255"/>
+              <line x1="348" y1="170" x2="55" y2="225"/>
+              <line x1="348" y1="110" x2="55" y2="55"/>
+            </g>
+
+            <!-- nodes -->
+            <g filter="url(#shadow)">
+              <rect x="315" y="6" width="190" height="44" rx="10" fill="rgba(34,197,94,0.15)" stroke="#0f172a"></rect>
+              <text x="410" y="34" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="800">Employment</text>
+
+              <rect x="590" y="30" width="210" height="50" rx="10" fill="rgba(99,102,241,0.12)" stroke="#0f172a"></rect>
+              <text x="695" y="60" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="800">Automated</text>
+              <text x="695" y="78" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="800">Production</text>
+
+              <rect x="590" y="200" width="210" height="50" rx="10" fill="rgba(244,63,94,0.10)" stroke="#0f172a"></rect>
+              <text x="695" y="230" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="800">Workers’ Health</text>
+
+              <rect x="315" y="235" width="190" height="44" rx="10" fill="rgba(245,158,11,0.15)" stroke="#0f172a"></rect>
+              <text x="410" y="263" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="800">Environment</text>
+
+              <rect x="10" y="200" width="235" height="50" rx="10" fill="rgba(14,165,233,0.10)" stroke="#0f172a"></rect>
+              <text x="127" y="230" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="800">Culture & Morals</text>
+
+              <rect x="10" y="30" width="235" height="50" rx="10" fill="rgba(168,85,247,0.10)" stroke="#0f172a"></rect>
+              <text x="127" y="60" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="800">Breakthroughs</text>
+              <text x="127" y="78" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="800">(AI + Networks)</text>
+            </g>
+          </svg>
+          <p style="margin:10px 0 0 0; color:#64748b; font-weight:700;">
+            KCSE move: pick any one “node”, then list positives + negatives, then give an example.
+          </p>
+        </div>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="employment">2) Effects on employment</summary>
+        <p>
+          Computers changed how people work. The major effects are:
+        </p>
+
+        <details class="note-section" open>
+          <summary id="job-creation">A) Job creation</summary>
+          <p>Computers created new jobs that did not exist before (especially where computers are widely used).</p>
+          <div class="concept-box">
+            <h4 style="margin-top:0;">Examples of places where computers are used</h4>
+            <ul>
+              <li>Banks and financial institutions</li>
+              <li>Schools and colleges</li>
+              <li>Hospitals</li>
+              <li>Communication companies</li>
+              <li>Reservation and booking systems</li>
+            </ul>
+            <h4>Examples of new job titles</h4>
+            <ul>
+              <li>Computer operators</li>
+              <li>Programmers</li>
+              <li>Network administrators</li>
+              <li>IT / IS managers</li>
+              <li>Database administrators</li>
+              <li>Software developers</li>
+              <li>System analysts</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="job-replacement">B) Job replacement</summary>
+          <p>
+            Job replacement happens when <strong>old jobs disappear</strong> and <strong>new jobs need higher computer skills</strong>.
+          </p>
+          <ul>
+            <li>Many clerical/repetitive office jobs are now done by computers.</li>
+            <li>Fewer workers can do the same work (because computers increase speed and accuracy).</li>
+            <li>People who cannot use computers may be replaced by those with computer skills.</li>
+          </ul>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="job-displacement">C) Job displacement</summary>
+          <p>
+            Job displacement means a worker is <strong>moved</strong> to another department or position where the new job may not require computer skills.
+            This commonly affects workers who are <strong>not willing to learn</strong> new computer skills.
+          </p>
+          <div class="concept-box">
+            <h4 style="margin-top:0;">How to reduce job losses (KCSE-safe points)</h4>
+            <ul>
+              <li>Employers organize <strong>in-service training</strong>.</li>
+              <li>Workers are trained to use new computer systems.</li>
+              <li>This helps workers keep up with changes in ICT.</li>
+            </ul>
+          </div>
+        </details>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="automation">3) Effects on automated production</summary>
+        <p>
+          <strong>Automated production</strong> means using machines and computers instead of manual labour to improve
+          <strong>speed</strong>, <strong>quality</strong> and <strong>accuracy</strong>.
+        </p>
+
+        <div class="concept-box">
+          <h4 style="margin-top:0;">Examples of industries using automated production</h4>
+          <ul>
+            <li>Vehicle assembly plants</li>
+            <li>Oil refineries</li>
+            <li>Food processing factories</li>
+          </ul>
+          <p style="margin:10px 0 0 0;">
+            In these industries, computers control machines and robots; assembly lines work automatically; production becomes faster and more efficient.
+          </p>
+        </div>
+
+        <details class="note-section" open>
+          <summary id="automation-advantages">A) Advantages of automated production</summary>
+          <ol>
+            <li>Increased efficiency due to balancing workload and production capacity.</li>
+            <li>Improved customer service because of adequate and high-quality goods.</li>
+            <li>Faster production (goods produced in time).</li>
+            <li>Efficient use of resources (raw materials, personnel, equipment).</li>
+            <li>Less operating expenses.</li>
+            <li>Reduced accidents in hazardous sectors (e.g. mining, chemical production).</li>
+          </ol>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="automation-disadvantages">B) Disadvantages of automated production</summary>
+          <ol>
+            <li>High initial cost of setting up an automated system.</li>
+            <li>May lead to unemployment in labour-intensive areas.</li>
+            <li>Possible lack of compatibility with software and hardware.</li>
+            <li>Overreliance on automated systems can lead to laziness.</li>
+            <li>Resistance to change.</li>
+          </ol>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="resistance-reasons">C) Why employees may resist automated systems</summary>
+          <ul>
+            <li><strong>Fear of change:</strong> used to old ways of working.</li>
+            <li><strong>Fear of losing jobs:</strong> believe computers will replace them.</li>
+            <li><strong>Fear of failure:</strong> worry they will not learn/use the new system properly.</li>
+            <li><strong>Loss of control:</strong> managers fear computers may reduce their control.</li>
+            <li><strong>Lack of understanding:</strong> don’t see how computers will help them.</li>
+          </ul>
+        </details>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="health">4) Issues of workers’ health</summary>
+        <p>Some negative effects of ICT on health include:</p>
+        <ul>
+          <li>Repetitive Strain Injuries (RSI)</li>
+          <li>Eye strain and headaches (computer vision syndrome)</li>
+          <li>Electromagnetic emissions</li>
+          <li>Stress</li>
+          <li>Isolation</li>
+          <li>Computer chip toxin (for workers in chip factories)</li>
+        </ul>
+
+        <details class="note-section" open>
+          <summary id="rsi">A) RSI (Repetitive Strain Injuries)</summary>
+          <p>
+            RSI are injuries resulting from wrist, hand, arm and muscle strain, plus neck strains due to forced repetitive movement
+            (e.g. entering data using a keyboard).
+          </p>
+          <div class="concept-box">
+            <h4 style="margin-top:0;">Remedies for RSI</h4>
+            <ul>
+              <li>Resting</li>
+              <li>Sitting in a relaxed position</li>
+              <li>Changing typing techniques</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="eye-strain">B) Eye strain and headaches (Computer Vision Syndrome)</summary>
+          <p>
+            Because computer users keep their eyes at close range with the monitor, they may develop
+            <strong>computer vision syndrome (CVS)</strong>.
+          </p>
+          <div class="concept-box">
+            <h4 style="margin-top:0;">CVS symptoms (as listed in notes)</h4>
+            <ul>
+              <li>Eye strain</li>
+              <li>Headaches</li>
+              <li>Double vision</li>
+              <li>Fatigue</li>
+            </ul>
+          </div>
+
+          <div class="concept-box">
+            <h4 style="margin-top:0;">Remedies for CVS / eye strain</h4>
+            <ol>
+              <li>Use monitors with good resolution.</li>
+              <li>Fit monitors with antiglare screens to filter excess light.</li>
+              <li>Adjust brightness to a comfortable intensity.</li>
+              <li>Use flat panel screens that emit fewer radiations.</li>
+              <li>Use good overhead fluorescence tubes.</li>
+              <li>Avoid flickering monitors and lighting systems.</li>
+              <li>Have interludes of rest.</li>
+              <li>Tilt monitors to a convenient position.</li>
+            </ol>
+          </div>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="ergonomics">C) Ergonomics (workplace design)</summary>
+          <p>
+            <strong>Ergonomics</strong> means designing the workplace to make work safe, comfortable, and healthy.
+          </p>
+
+          <div class="concept-box">
+            <h4 style="margin-top:0;">Simple “good posture” sketch (for memory)</h4>
+            <svg viewBox="0 0 860 260" width="100%" height="260" role="img" aria-label="Ergonomics posture diagram"
+                 style="border:1px solid #e2e8f0; border-radius:12px; background:#fff;">
+              <!-- Desk -->
+              <rect x="440" y="140" width="360" height="18" rx="6" fill="#94a3b8"/>
+              <rect x="465" y="158" width="18" height="70" fill="#94a3b8"/>
+              <rect x="760" y="158" width="18" height="70" fill="#94a3b8"/>
+
+              <!-- Monitor -->
+              <rect x="620" y="60" width="150" height="75" rx="10" fill="rgba(79,195,247,0.18)" stroke="#0f172a" stroke-width="2"/>
+              <rect x="686" y="135" width="18" height="20" fill="#0f172a"/>
+              <rect x="655" y="155" width="80" height="10" rx="4" fill="#0f172a"/>
+              <text x="695" y="55" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="800">Monitor</text>
+
+              <!-- Chair -->
+              <rect x="210" y="150" width="160" height="18" rx="6" fill="rgba(99,102,241,0.12)" stroke="#0f172a"/>
+              <rect x="235" y="90" width="35" height="70" rx="8" fill="rgba(99,102,241,0.12)" stroke="#0f172a"/>
+              <rect x="230" y="168" width="20" height="55" fill="#0f172a"/>
+              <rect x="320" y="168" width="20" height="55" fill="#0f172a"/>
+              <rect x="210" y="223" width="160" height="10" rx="5" fill="#0f172a"/>
+
+              <!-- Person (simple) -->
+              <circle cx="330" cy="85" r="18" fill="rgba(244,63,94,0.12)" stroke="#0f172a" stroke-width="2"/>
+              <line x1="330" y1="103" x2="330" y2="150" stroke="#0f172a" stroke-width="4"/>
+              <line x1="330" y1="120" x2="395" y2="140" stroke="#0f172a" stroke-width="4"/>
+              <line x1="330" y1="150" x2="290" y2="195" stroke="#0f172a" stroke-width="4"/>
+              <line x1="330" y1="150" x2="330" y2="195" stroke="#0f172a" stroke-width="4"/>
+
+              <!-- Keyboard -->
+              <rect x="500" y="125" width="140" height="14" rx="6" fill="rgba(34,197,94,0.15)" stroke="#0f172a"/>
+              <text x="570" y="120" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="800">Keyboard</text>
+
+              <!-- Labels -->
+              <text x="70" y="55" font-size="13" fill="#0f172a" font-weight="900">Memory cues:</text>
+              <text x="70" y="80" font-size="12" fill="#334155" font-weight="700">• Sit relaxed</text>
+              <text x="70" y="100" font-size="12" fill="#334155" font-weight="700">• Tilt monitor comfortably</text>
+              <text x="70" y="120" font-size="12" fill="#334155" font-weight="700">• Take breaks (rest interludes)</text>
+            </svg>
+          </div>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="emissions-stress-isolation">D) Emissions, stress, isolation, chip toxins</summary>
+          <ul>
+            <li><strong>Electromagnetic emissions:</strong> electronic devices produce small energy waves; use low-emission devices.</li>
+            <li><strong>Stress:</strong> pressure to work faster because computers work quickly.</li>
+            <li><strong>Isolation:</strong> reduced face-to-face communication can make workers feel lonely.</li>
+            <li><strong>Computer chip toxins:</strong> workers in chip factories may be exposed to harmful chemicals.</li>
+            <li><strong>Radiation and VDUs:</strong> modern screens do not produce harmful radiation, but long use can still cause eye strain and fatigue.</li>
+          </ul>
+        </details>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="environment">5) Environmental issues of ICT</summary>
+        <details class="note-section" open>
+          <summary id="energy-power-heat">A) Energy consumption and radiation concerns</summary>
+          <p>
+            In the past, computers used a lot of electricity, produced a lot of heat, and were believed to emit harmful electromagnetic radiation.
+            Today, modern computers are designed to use less power and produce less heat.
+          </p>
+          <div class="concept-box">
+            <h4 style="margin-top:0;">Remedy (named example from notes)</h4>
+            <p style="margin:0;">
+              Many devices are now <strong>Energy Star compliant</strong>, a program started by the <strong>Environmental Protection Agency (EPA)</strong>
+              to encourage low power consumption and protect the environment.
+            </p>
+          </div>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="ewaste">B) E-waste (electronic waste)</summary>
+          <p>
+            Old computers, printers, monitors, ink cartridges and accessories are often thrown away in large amounts.
+            This creates <strong>electronic waste</strong> which pollutes the environment when dumped in landfills.
+          </p>
+
+          <details class="note-section" open>
+            <summary id="toxic-ewaste">Toxic computer waste</summary>
+            <p>Some computer parts contain harmful chemicals. Example from notes:</p>
+            <ul>
+              <li><strong>Nickel-cadmium laptop batteries</strong> contain toxic <strong>cadmium</strong>.</li>
+              <li>When dumped in landfills, chemicals can leak into soil and underground water, causing pollution.</li>
+            </ul>
+          </details>
+
+          <div class="concept-box">
+            <h4 style="margin-top:0;">Simple e-waste flow diagram</h4>
+            <svg viewBox="0 0 900 240" width="100%" height="240" role="img" aria-label="E-waste diagram from device to landfill to pollution"
+                 style="border:1px solid #e2e8f0; border-radius:12px; background:#fff;">
+              <defs>
+                <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+                  <polygon points="0,0 10,5 0,10" fill="#0f172a"></polygon>
+                </marker>
+              </defs>
+
+              <rect x="40" y="70" width="210" height="90" rx="14" fill="rgba(79,195,247,0.16)" stroke="#0f172a"/>
+              <text x="145" y="110" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="900">Old devices</text>
+              <text x="145" y="132" text-anchor="middle" font-size="12" fill="#334155" font-weight="700">PCs, printers,</text>
+              <text x="145" y="150" text-anchor="middle" font-size="12" fill="#334155" font-weight="700">monitors, cartridges</text>
+
+              <line x1="250" y1="115" x2="355" y2="115" stroke="#0f172a" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+              <rect x="360" y="70" width="220" height="90" rx="14" fill="rgba(245,158,11,0.14)" stroke="#0f172a"/>
+              <text x="470" y="110" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="900">Landfill dumping</text>
+              <text x="470" y="132" text-anchor="middle" font-size="12" fill="#334155" font-weight="700">E-waste piles up</text>
+
+              <line x1="580" y1="115" x2="685" y2="115" stroke="#0f172a" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+              <rect x="690" y="70" width="170" height="90" rx="14" fill="rgba(244,63,94,0.12)" stroke="#0f172a"/>
+              <text x="775" y="110" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="900">Pollution</text>
+              <text x="775" y="132" text-anchor="middle" font-size="12" fill="#334155" font-weight="700">Chemicals leak</text>
+              <text x="775" y="150" text-anchor="middle" font-size="12" fill="#334155" font-weight="700">to soil & water</text>
+
+              <text x="40" y="205" font-size="12" fill="#64748b" font-weight="700">
+                Example toxin in notes: cadmium from nickel-cadmium laptop batteries.
+              </text>
+            </svg>
+          </div>
+        </details>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="culture">6) Cultural effects</summary>
+
+        <details class="note-section" open>
+          <summary id="moral-effects">A) Moral effects</summary>
+          <ul>
+            <li>Rapid growth of ICT presents challenges to moral and cultural values.</li>
+            <li>ICT changed the way we talk, affected privacy, human rights and integrity.</li>
+            <li>Exposure to <strong>flaming</strong> (online messages using derogatory/obscene language).</li>
+            <li>Access to pornographic materials may lead to moral decadence.</li>
+            <li>Free flow of immoral information negatively influences behavior of young and old.</li>
+            <li>Some people use computers to commit vices (e.g. forging certificates, passports and documents) — moral integrity is compromised.</li>
+            <li>On the contrary, ICT can be used as a campaign platform against diseases like AIDS and drug abuse.</li>
+          </ul>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="computer-crimes">B) Computer crimes</summary>
+          <p>
+            Computer crimes involve using computer software for illegal purposes. Examples in the notes include hacking, eavesdropping, piracy, etc.
+          </p>
+
+          <div class="concept-box">
+            <h4 style="margin-top:0;">Types of computer crimes (as listed)</h4>
+            <ol>
+              <li><strong>Data manipulation:</strong> altering data that enters/exits a computer (e.g. changing data on a certificate).</li>
+              <li><strong>Time bomb:</strong> coding a program to destroy itself after running a certain number of times.</li>
+              <li><strong>Computer virus:</strong> program aimed at destroying/altering data and spreading destruction over a network.</li>
+              <li><strong>Trap door:</strong> creating a special password giving its creator sole access to the system.</li>
+              <li><strong>Data stealing:</strong> stealing information gathered for someone else for illegitimate purpose.</li>
+              <li><strong>Eavesdropping:</strong> tapping without authorization into communication lines carrying computer data/messages.</li>
+              <li><strong>Industrial espionage:</strong> stealing trade secrets (designs, marketing plans) and selling to another company.</li>
+              <li><strong>Piracy:</strong> making unauthorized copies of copyrighted computer software.</li>
+              <li><strong>Fraud:</strong> using computers to cheat others intending to gain money/information.</li>
+              <li><strong>Sabotage:</strong> illegal destruction of data/information to cause loss to an organization.</li>
+              <li><strong>Logic bomb:</strong> program executed when certain conditions are met (e.g. triggered during database updates).</li>
+            </ol>
+          </div>
+        </details>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="breakthroughs">7) Breakthroughs in ICT</summary>
+        <p>ICT has improved many areas, including:</p>
+        <ul>
+          <li>Health care</li>
+          <li>Education</li>
+          <li>Communication (e-mail, internet, fax)</li>
+          <li>Research</li>
+          <li>Commerce (imports and exports)</li>
+          <li>Art and design</li>
+          <li>Entertainment (music, videos, games)</li>
+          <li>Transport</li>
+        </ul>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="future-trends">8) Evolution & future trends in ICT</summary>
+
+        <details class="note-section" open>
+          <summary id="hardware-software">A) Rapid evolution in hardware and software</summary>
+          <ul>
+            <li>Computers are becoming smaller, cheaper, faster and more powerful.</li>
+            <li>Microprocessors can process billions of instructions per second.</li>
+            <li>Devices are becoming smart, portable and more reliable.</li>
+            <li>Software is becoming easier to use and more flexible.</li>
+            <li>Industries are becoming more automated.</li>
+          </ul>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="ai">B) Artificial Intelligence (AI)</summary>
+          <p>
+            AI is a branch of computer science focusing on making machines behave like humans by learning, reasoning, seeing, hearing, and communicating.
+            AI aims to create smart computers that can think and learn rather than only follow fixed instructions.
+          </p>
+
+          <details class="note-section" open>
+            <summary id="ai-areas">Main areas of AI (as listed)</summary>
+            <ul>
+              <li>Expert systems</li>
+              <li>Natural language processing</li>
+              <li>Voice recognition</li>
+              <li>Voice synthesis</li>
+              <li>Computer vision</li>
+              <li>Artificial neural networks</li>
+              <li>Robotics and perception systems</li>
+            </ul>
+          </details>
+
+          <details class="note-section" open>
+            <summary id="expert-systems">Expert systems</summary>
+            <p>
+              An <strong>expert system</strong> is a computer program that works like a human expert in a specific field.
+              Examples of use include medical diagnosis, financial forecasting, locomotive maintenance, and mineral exploration.
+            </p>
+
+            <div class="concept-box">
+              <h4 style="margin-top:0;">Components of an expert system</h4>
+              <ol>
+                <li><strong>Knowledge base:</strong> stores expert facts and rules.</li>
+                <li><strong>Inference engine:</strong> thinks and gives conclusions.</li>
+                <li><strong>User interface:</strong> allows interaction with the system.</li>
+              </ol>
+
+              <h4>Examples named in notes</h4>
+              <p style="margin:0; font-weight:700; color:#334155;">
+                MYCIN (medical), DELTA (locomotives), MUDMAN (minerals), STEAMER (navy training), R-1 (system design)
+              </p>
+            </div>
+
+            <div class="concept-box">
+              <h4 style="margin-top:0;">Expert system block diagram</h4>
+              <svg viewBox="0 0 900 220" width="100%" height="220" role="img" aria-label="Expert system components diagram"
+                   style="border:1px solid #e2e8f0; border-radius:12px; background:#fff;">
+                <defs>
+                  <marker id="arr2" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+                    <polygon points="0,0 10,5 0,10" fill="#0f172a"></polygon>
+                  </marker>
+                </defs>
+
+                <rect x="40" y="70" width="240" height="90" rx="14" fill="rgba(99,102,241,0.12)" stroke="#0f172a"/>
+                <text x="160" y="112" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="900">Knowledge base</text>
+                <text x="160" y="135" text-anchor="middle" font-size="12" fill="#334155" font-weight="700">Facts + rules</text>
+
+                <line x1="280" y1="115" x2="360" y2="115" stroke="#0f172a" stroke-width="2.5" marker-end="url(#arr2)"/>
+
+                <rect x="370" y="70" width="240" height="90" rx="14" fill="rgba(34,197,94,0.14)" stroke="#0f172a"/>
+                <text x="490" y="112" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="900">Inference engine</text>
+                <text x="490" y="135" text-anchor="middle" font-size="12" fill="#334155" font-weight="700">Reasoning / conclusions</text>
+
+                <line x1="610" y1="115" x2="690" y2="115" stroke="#0f172a" stroke-width="2.5" marker-end="url(#arr2)"/>
+
+                <rect x="700" y="70" width="160" height="90" rx="14" fill="rgba(79,195,247,0.16)" stroke="#0f172a"/>
+                <text x="780" y="112" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="900">User interface</text>
+                <text x="780" y="135" text-anchor="middle" font-size="12" fill="#334155" font-weight="700">User interaction</text>
+              </svg>
+            </div>
+
+            <details class="note-section" open>
+              <summary id="expert-advantages">Advantages (as listed)</summary>
+              <ul>
+                <li>Fast and accurate</li>
+                <li>Stores large amounts of data</li>
+                <li>Gives consistent answers</li>
+                <li>Works 24 hours</li>
+                <li>Can be used remotely</li>
+              </ul>
+            </details>
+
+            <details class="note-section" open>
+              <summary id="expert-disadvantages">Disadvantages (as listed)</summary>
+              <ul>
+                <li>Expensive and complex</li>
+                <li>Can make mistakes</li>
+                <li>Cannot explain deeply</li>
+                <li>May replace human experts</li>
+              </ul>
+            </details>
+          </details>
+
+          <details class="note-section" open>
+            <summary id="nlp-voice">Natural Language Processing & speech technologies</summary>
+            <ul>
+              <li><strong>Natural Language Processing (NLP):</strong> enables computers to understand human languages (spoken or written).</li>
+              <li><strong>Voice recognition:</strong> users input data by speaking. Challenges: different accents, similar sounding words, background noise.</li>
+              <li><strong>Voice synthesis:</strong> computers produce human-like speech.</li>
+            </ul>
+          </details>
+
+          <details class="note-section" open>
+            <summary id="vision-nn">Computer vision & artificial neural networks</summary>
+            <ul>
+              <li><strong>Computer vision:</strong> computers see and interpret images, text and objects like humans.</li>
+              <li>
+                <strong>Artificial neural networks:</strong> copy how the human brain works — learn from data, recognize patterns, make predictions.
+                Example in notes: banks use them to detect unusual credit card spending.
+              </li>
+            </ul>
+          </details>
+
+          <details class="note-section" open>
+            <summary id="robotics">Robotics and perception systems</summary>
+            <p>
+              Robots are computer-controlled machines that perform dangerous or difficult tasks.
+              Perception systems allow robots to sense: sight, hearing, touch, smell, taste.
+            </p>
+
+            <details class="note-section" open>
+              <summary id="robots-advantages">Advantages of robots</summary>
+              <ul>
+                <li>Work all the time</li>
+                <li>High speed and accuracy</li>
+                <li>High productivity</li>
+                <li>Work in dangerous places</li>
+              </ul>
+            </details>
+
+            <details class="note-section" open>
+              <summary id="robots-disadvantages">Disadvantages of robots</summary>
+              <ul>
+                <li>Expensive</li>
+                <li>Replace workers</li>
+                <li>Limited to specific tasks</li>
+                <li>Can malfunction</li>
+              </ul>
+            </details>
+
+            <details class="note-section" open>
+              <summary id="laws-robotics">Laws of robotics (as listed)</summary>
+              <ol>
+                <li>A robot must not harm a human.</li>
+                <li>A robot must obey humans unless it causes harm.</li>
+                <li>A robot must protect itself unless it conflicts with the first two laws.</li>
+              </ol>
+            </details>
+          </details>
+        </details>
+
+        <details class="note-section" open>
+          <summary id="info-superhighway">C) Expanded information superhighway</summary>
+          <p>
+            This refers to the growth of internet and communication networks. It uses fiber optic and wireless technology,
+            supports faster data transfer and worldwide digital communication. The internet is growing very fast, causing a digital information explosion.
+          </p>
+        </details>
+      </details>
+
+      <details class="note-section" open>
+        <summary id="classroom-reality">9) Classroom reality: how to revise this topic in an ordinary resource setting</summary>
+        <div class="concept-box" style="border-left-color:#10b981;">
+          <h4 style="margin-top:0;">Low-resource revision tricks that still work</h4>
+          <ul>
+            <li><strong>Employment impacts:</strong> use local examples (school, hospital, bank, cybercafé) and link them to job creation/replacement.</li>
+            <li><strong>Automation:</strong> watch one short clip (even offline) of an assembly line, then list advantages/disadvantages.</li>
+            <li><strong>Health:</strong> do “desk setup” talk — posture + breaks + anti-glare (practical, memorable).</li>
+            <li><strong>Environment:</strong> list common e-waste items around you (old phones, chargers, printers) and explain landfill pollution.</li>
+            <li><strong>AI:</strong> memorize the AI areas list + expert system components (KCSE loves lists).</li>
+          </ul>
+          <p style="margin:10px 0 0 0; color:#64748b; font-weight:800;">
+            KCSE secret: don’t write novels. Write clean bullet points with one short explanation each.
+          </p>
+        </div>
+      </details>
+
+    </div>
+
+    <!-- TAB 2: QUICK REVISION -->
+    <div id="quick-revision" class="content-section">
+      <h2>IMPACT OF ICT ON SOCIETY — QUICK REVISION</h2>
+
+      <div class="concept-box" style="border-left-color:#f59e0b;">
+        <h3 style="margin-top:0;">Must-master lists (KCSE)</h3>
+        <ul>
+          <li><strong>Main ICT impact areas:</strong> employment, automation, health, environment, culture, breakthroughs.</li>
+          <li><strong>Employment effects:</strong> job creation, job replacement, job displacement.</li>
+          <li><strong>Automation:</strong> definition + advantages + disadvantages + reasons for resistance.</li>
+          <li><strong>Health issues:</strong> RSI, CVS/eye strain, emissions, stress, isolation, chip toxins; ergonomics.</li>
+          <li><strong>Environment:</strong> energy use/heat; Energy Star; e-waste; toxic waste (cadmium example).</li>
+          <li><strong>Culture:</strong> moral effects; computer crimes types.</li>
+          <li><strong>Future trends:</strong> hardware/software evolution; AI; information superhighway.</li>
+          <li><strong>AI:</strong> areas list + expert system components + laws of robotics.</li>
+        </ul>
+      </div>
+
+      <h3 id="qr-defs">1) One-line definitions</h3>
+      <ul>
+        <li><strong>Impact:</strong> a positive or negative effect.</li>
+        <li><strong>Automated production:</strong> using machines/computers instead of manual labour to improve speed, quality and accuracy.</li>
+        <li><strong>Ergonomics:</strong> designing workplace to be safe, comfortable and healthy.</li>
+        <li><strong>Computer crimes:</strong> use of computer software for illegal purpose.</li>
+        <li><strong>AI:</strong> making machines behave like humans by learning, reasoning, seeing, hearing and communicating.</li>
+        <li><strong>Expert system:</strong> program that works like a human expert in a specific field.</li>
+        <li><strong>Information superhighway:</strong> growth of internet/communication networks using fiber optic and wireless technology.</li>
+      </ul>
+
+      <h3 id="qr-remember">2) Memory prompts (short, exam-ready)</h3>
+      <ol>
+        <li>State the three effects of ICT on employment and explain each briefly.</li>
+        <li>Define automated production and give two examples of industries where it is used.</li>
+        <li>Give four advantages and four disadvantages of automated production.</li>
+        <li>List five reasons why employees resist automated systems.</li>
+        <li>Define RSI and give three remedies.</li>
+        <li>State four symptoms of computer vision syndrome and four remedies.</li>
+        <li>Explain how e-waste pollutes the environment and give one toxic example from computer waste.</li>
+        <li>List any six computer crimes and explain two.</li>
+        <li>Define AI and list the main areas of AI.</li>
+        <li>Draw/describe the components of an expert system.</li>
+      </ol>
+
+      <h3 id="qr-traps">3) KCSE traps (don’t donate marks)</h3>
+      <ul>
+        <li>Don’t confuse <strong>job replacement</strong> with <strong>job displacement</strong> — replacement is “old jobs disappear”; displacement is “worker moved to another position.”</li>
+        <li>For computer crimes, give the <strong>type + short meaning</strong> (e.g., “trap door: special password giving sole access”).</li>
+        <li>For AI, KCSE likes lists — don’t freestyle new AI fields not in your notes.</li>
+        <li>For health issues, always add at least one <strong>remedy</strong> (RSI/CVS are easy marks).</li>
+      </ul>
+    </div>
+
+    <!-- TAB 3: KCSE DRILL -->
+    <div id="kcse-drill" class="content-section">
+      <h2>KCSE DRILL (Try on paper first, then mark yourself)</h2>
+      <div id="kcse-container">
+        <p style="color:#64748b; font-weight:700;">
+          If this section appears blank, confirm your <code>main.js</code> includes the KCSE Drill loader.
+          (This page provides <code>kcseData</code>; the script renders it.)
+        </p>
+      </div>
+    </div>
+
+    <!-- TAB 4: MCQ QUIZ -->
+    <div id="quiz-view" class="content-section">
+      <h2>MCQ Quiz (Instant feedback)</h2>
+      <div id="quiz-container"></div>
+    </div>
+
+  </div>
+
+  <!-- Back to top -->
+  <button id="back-to-top" title="Back to top">↑</button>
+
+  <!-- =========================
+       DATA: KCSE Drill Questions
+       ========================= -->
+  <script>
+    // KCSE Drill data: { prompt, marks, points[] }
+    const kcseData = [
+      {
+        prompt: "Define the term 'impact' as used in ICT and society.",
+        marks: 2,
+        points: [
+          "Defines impact as an effect",
+          "States it can be positive or negative"
+        ]
+      },
+      {
+        prompt: "List SIX issues resulting from the use of ICT in society.",
+        marks: 6,
+        points: [
+          "Effects on employment",
+          "Effects on automated production",
+          "Issues of workers’ health",
+          "Environmental issues",
+          "Cultural effects",
+          "Breakthroughs in ICT / future trends"
+        ]
+      },
+      {
+        prompt: "Explain THREE effects of computers on employment.",
+        marks: 9,
+        points: [
+          "Job creation: computers create new jobs and job titles requiring computer skills",
+          "Job replacement: old clerical/repetitive jobs disappear; fewer workers needed; unskilled replaced by skilled",
+          "Job displacement: workers moved to other departments/positions; often affects those unwilling to learn"
+        ]
+      },
+      {
+        prompt: "Define automated production and give THREE examples of industries where it is used.",
+        marks: 6,
+        points: [
+          "Defines automated production as using machines/computers instead of manual labour",
+          "Mentions improvement in speed/quality/accuracy",
+          "Gives vehicle assembly plants",
+          "Gives oil refineries",
+          "Gives food processing factories",
+          "Examples clearly linked to automated production"
+        ]
+      },
+      {
+        prompt: "State FOUR advantages and FOUR disadvantages of automated production.",
+        marks: 8,
+        points: [
+          "Advantages (any four): increased efficiency; improved customer service/high-quality goods; faster production; efficient use of resources; less operating expenses; reduced accidents in hazardous sectors",
+          "Disadvantages (any four): high initial cost; unemployment in labour intensive areas; compatibility problems; overreliance causes laziness; resistance to change"
+        ]
+      },
+      {
+        prompt: "Give FIVE reasons why employees may resist automated systems.",
+        marks: 10,
+        points: [
+          "Fear of change",
+          "Fear of losing jobs",
+          "Fear of failure (cannot learn/use system properly)",
+          "Loss of control (managers fear reduced control)",
+          "Lack of understanding of benefits"
+        ]
+      },
+      {
+        prompt: "Define RSI and give THREE remedies.",
+        marks: 7,
+        points: [
+          "Defines RSI as injuries from repetitive movement causing wrist/hand/arm/muscle strain and neck strains",
+          "Gives remedy: resting",
+          "Gives remedy: sitting in a relaxed position",
+          "Gives remedy: changing typing techniques",
+          "Answer is clear and correctly linked to RSI"
+        ]
+      },
+      {
+        prompt: "State FOUR symptoms of computer vision syndrome (CVS) and give FOUR remedies.",
+        marks: 8,
+        points: [
+          "Symptoms (any four): eye strain; headaches; double vision; fatigue",
+          "Remedies (any four): good resolution monitor; antiglare screen; adjust brightness; flat panel screens; good overhead fluorescence; avoid flicker; rest breaks; tilt monitor to convenient position"
+        ]
+      },
+      {
+        prompt: "Explain what is meant by e-waste and describe how toxic computer waste can pollute the environment (give one example).",
+        marks: 8,
+        points: [
+          "Defines e-waste as discarded electronic devices/accessories (computers, printers, monitors, cartridges, etc.)",
+          "States dumping in landfills leads to pollution",
+          "Explains harmful chemicals can leak into soil and underground water",
+          "Gives example: nickel-cadmium laptop batteries contain toxic cadmium",
+          "Answer is clear and correctly linked"
+        ]
+      },
+      {
+        prompt: "Describe the moral effects of ICT in society (give at least FOUR points).",
+        marks: 8,
+        points: [
+          "ICT affects privacy, human rights and integrity",
+          "Exposure to flaming/obscene derogatory language",
+          "Access to pornographic materials may cause moral decadence",
+          "Free flow of immoral information influences behaviour negatively",
+          "ICT can be used to forge certificates/passports/documents",
+          "ICT can also be used as a campaign platform against diseases like AIDS and drug abuse"
+        ]
+      },
+      {
+        prompt: "List EIGHT types of computer crimes and briefly explain any TWO.",
+        marks: 10,
+        points: [
+          "Lists any eight from: data manipulation, time bomb, computer virus, trap door, data stealing, eavesdropping, industrial espionage, piracy, fraud, sabotage, logic bomb",
+          "Explains any two correctly (e.g. trap door, virus, eavesdropping, piracy, etc.)"
+        ]
+      },
+      {
+        prompt: "Define Artificial Intelligence (AI) and outline: (i) three main areas of AI (ii) components of an expert system.",
+        marks: 10,
+        points: [
+          "Defines AI as making machines behave like humans by learning, reasoning, seeing, hearing and communicating",
+          "Lists any three AI areas (e.g. expert systems, NLP, voice recognition, voice synthesis, computer vision, neural networks, robotics/perception)",
+          "States knowledge base as a component",
+          "States inference engine as a component",
+          "States user interface as a component"
+        ]
+      }
+    ];
+  </script>
+
+  <!-- =========================
+       DATA: MCQ Quiz Questions
+       ========================= -->
+  <script>
+    // quizData format: { question, options, correct, explanation }
+    const quizData = [
+      {
+        question: "In ICT studies, an 'impact' is best defined as:",
+        options: [
+          "A computer device",
+          "A positive or negative effect",
+          "A network cable",
+          "A type of software"
+        ],
+        correct: 1,
+        explanation: "Impact means an effect, and it can be positive or negative."
+      },
+      {
+        question: "Which of the following is NOT listed as an issue resulting from the use of ICT?",
+        options: [
+          "Effects on employment",
+          "Environmental issues",
+          "Weather forecasting",
+          "Issues of workers’ health"
+        ],
+        correct: 2,
+        explanation: "The notes list employment, automation, health, environment, culture and breakthroughs—not weather forecasting."
+      },
+      {
+        question: "Job replacement mainly refers to:",
+        options: [
+          "Moving a worker to another department",
+          "Old jobs disappearing while new jobs require higher computer skills",
+          "Creating more manual jobs",
+          "Reducing computer use in offices"
+        ],
+        correct: 1,
+        explanation: "Job replacement happens when old jobs disappear and new ones require higher computer skills."
+      },
+      {
+        question: "Automated production means:",
+        options: [
+          "Using machines and computers instead of manual labour",
+          "Hiring more workers for production",
+          "Stopping the use of computers in factories",
+          "Producing goods only by hand"
+        ],
+        correct: 0,
+        explanation: "Automated production uses machines and computers to improve speed, quality and accuracy."
+      },
+      {
+        question: "Which is an advantage of automated production?",
+        options: [
+          "High initial cost of setting up systems",
+          "Reduced accidents in hazardous sectors",
+          "Resistance to change",
+          "Compatibility problems"
+        ],
+        correct: 1,
+        explanation: "Automation can reduce accidents in dangerous work areas like mining and chemical production."
+      },
+      {
+        question: "A common reason employees resist automation is:",
+        options: [
+          "Because computers are always slow",
+          "Fear of losing their jobs",
+          "Because ICT reduces product quality",
+          "Because it increases the need for manual labour"
+        ],
+        correct: 1,
+        explanation: "Workers may fear computers will replace them and they may lose their jobs."
+      },
+      {
+        question: "RSI is mainly caused by:",
+        options: [
+          "Forced repetitive movement like continuous keyboard use",
+          "Using a printer",
+          "Watching videos online",
+          "Power outages"
+        ],
+        correct: 0,
+        explanation: "RSI results from repetitive movements causing wrist/hand/arm and neck strain."
+      },
+      {
+        question: "Which of the following is listed as a symptom of computer vision syndrome (CVS)?",
+        options: [
+          "High blood pressure",
+          "Double vision",
+          "Hearing loss",
+          "Skin rash"
+        ],
+        correct: 1,
+        explanation: "CVS symptoms in the notes include eye strain, headaches, double vision and fatigue."
+      },
+      {
+        question: "E-waste becomes an environmental problem mainly because:",
+        options: [
+          "It improves recycling",
+          "It can pollute when dumped in landfills",
+          "It reduces electricity use",
+          "It is always biodegradable"
+        ],
+        correct: 1,
+        explanation: "Large amounts of old devices dumped in landfills cause pollution."
+      },
+      {
+        question: "Which set correctly matches the components of an expert system?",
+        options: [
+          "Keyboard, monitor, mouse",
+          "Knowledge base, inference engine, user interface",
+          "CPU, RAM, ROM",
+          "Router, switch, modem"
+        ],
+        correct: 1,
+        explanation: "An expert system has a knowledge base, inference engine and user interface."
+      }
+    ];
+  </script>
+
+  <!-- Main script -->
+  <script src="../main.js" defer></script>
+</body>
+</html>
